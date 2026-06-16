@@ -301,7 +301,7 @@
             }
         }
 
-        /* Clouds, moon, mountains, forest, UFO, unicorn… */
+        /* Background clouds (not part of ship) */
         .pixel-cloud {
             position: absolute;
             background: #5e569b;
@@ -401,67 +401,132 @@
             box-shadow: 24px 24px 0 #dbaa3a, 40px 10px 0 #c9922a;
         }
 
-        .ufo-wrapper {
+        /* ─── FLYING VIKING SHIP with FAIRY DUST TRAIL ─── */
+        .ship-wrapper {
             position: absolute;
             z-index: 6;
             pointer-events: none;
-            top: 68%;
-            left: -100px;
-            animation: moveUFO 20s linear infinite;
+            bottom: 75px;  /* lowered further to skim just above mountain peaks */
+            left: -280px;
+            width: 260px;
+            height: auto;
+            animation: moveShip 22s linear infinite;
+            filter: drop-shadow(0 0 25px rgba(255, 200, 100, 0.2)) drop-shadow(0 0 50px rgba(255, 150, 50, 0.1));
         }
-        .ufo {
-            width: 60px;
-            height: 30px;
-            background: transparent;
-            position: relative;
-        }
-        .ufo svg {
+        .ship-svg {
             width: 100%;
             height: auto;
-            filter: drop-shadow(0 0 12px #0af);
-            animation: ufoFloat 0.8s ease-in-out infinite;
+            display: block;
         }
-        @keyframes ufoFloat {
-            0%,
-            100% {
-                transform: translateY(0);
+        .ship-svg .sail {
+            animation: sailWave 1.6s ease-in-out infinite alternate;
+            transform-origin: 50% 100%;
+        }
+        .ship-svg .sail-2 {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes sailWave {
+            0% {
+                transform: scaleX(1) skewX(0deg) rotate(0deg);
+            }
+            25% {
+                transform: scaleX(0.92) skewX(2.5deg) rotate(0.5deg);
             }
             50% {
-                transform: translateY(-4px);
+                transform: scaleX(1.08) skewX(-2.5deg) rotate(-0.5deg);
             }
-        }
-        /* ── UFO TRAIL – DECREASED ── */
-        .ufo-trail {
-            position: absolute;
-            top: 14px;
-            left: -20px;
-            width: 25px;
-            height: 8px;
-            pointer-events: none;
-            background: repeating-linear-gradient(90deg, #0af 0px, #0af 6px, #3cf 6px, #3cf 12px, #7cf 12px, #7cf 18px);
-            background-size: 18px 8px;
-            opacity: 0.9;
-            animation: trailPulse 0.3s steps(2) infinite;
-        }
-        @keyframes trailPulse {
-            0% {
-                opacity: 0.9;
-                transform: translateX(0);
+            75% {
+                transform: scaleX(0.96) skewX(1.5deg) rotate(0.3deg);
             }
             100% {
-                opacity: 0.4;
-                transform: translateX(3px);
-            }
-        }
-        @keyframes moveUFO {
-            0% {
-                left: -100px;
-            }
-            100% {
-                left: calc(100% + 100px);
+                transform: scaleX(1.02) skewX(-1deg) rotate(-0.2deg);
             }
         }
 
+        /* ── FAIRY DUST TRAIL ANIMATIONS ── */
+        .dust {
+            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
+            animation: dustFloat 3.5s ease-in-out infinite;
+        }
+        .sparkle {
+            filter: drop-shadow(0 0 12px #ffdd44);
+            animation: sparkleTwinkle 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes dustFloat {
+            0% {
+                opacity: 0;
+                transform: translateX(0) translateY(0) scale(0.6);
+            }
+            15% {
+                opacity: 1;
+                transform: translateX(-15px) translateY(-5px) scale(1.1);
+            }
+            85% {
+                opacity: 0.9;
+                transform: translateX(-130px) translateY(-25px) scale(0.4);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-160px) translateY(-35px) scale(0.1);
+            }
+        }
+        @keyframes sparkleTwinkle {
+            0% {
+                opacity: 0.1;
+                transform: scale(0.4) rotate(0deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.3) rotate(60deg);
+            }
+        }
+
+        @keyframes moveShip {
+            0% {
+                left: -280px;
+                transform: translateY(0) rotate(0deg);
+            }
+            10% {
+                transform: translateY(-8px) rotate(0.5deg);
+            }
+            30% {
+                transform: translateY(5px) rotate(-0.4deg);
+            }
+            50% {
+                transform: translateY(-10px) rotate(0.8deg);
+            }
+            70% {
+                transform: translateY(4px) rotate(-0.5deg);
+            }
+            90% {
+                transform: translateY(-6px) rotate(0.4deg);
+            }
+            100% {
+                left: calc(100% + 280px);
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* ── SHIP RESPONSIVE ── */
+        @media (max-width: 700px) {
+            .ship-wrapper {
+                width: 160px;
+                bottom: 40px;  /* adjusted for mobile */
+                left: -180px;
+                animation-duration: 18s;
+            }
+        }
+        @media (max-width: 400px) {
+            .ship-wrapper {
+                width: 120px;
+                bottom: 28px;
+                left: -140px;
+                animation-duration: 14s;
+            }
+        }
+
+        /* ── EXTRA STARS ── */
         .extra-star {
             position: absolute;
             font-size: 1rem;
@@ -584,12 +649,12 @@
             width: 58px;
         }
 
-        /* ── DRAGON – BIGGER, LOWER, PUSHED FURTHER RIGHT ── */
+        /* ── DRAGON ── */
         .dragon-wrapper {
             position: absolute;
             z-index: 7;
             top: 34%;
-            right: -55px;       /* was -35px – even further right */
+            right: -55px;
             width: 480px;
             height: auto;
             filter: drop-shadow(0 0 20px #2ecc71) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7));
@@ -1423,7 +1488,7 @@
             .dragon-wrapper {
                 width: 280px;
                 top: 20%;
-                right: -35px;   /* was -25px – further right */
+                right: -35px;
             }
             .stat .num {
                 font-size: 1rem;
@@ -1433,13 +1498,6 @@
                 height: 130px;
             }
             .shooting-star {
-                transform: scale(0.7);
-            }
-            .ufo-wrapper {
-                top: 72%;
-                animation-duration: 14s;
-            }
-            .ufo {
                 transform: scale(0.7);
             }
             .client-item {
@@ -1515,7 +1573,7 @@
             .dragon-wrapper {
                 width: 200px;
                 top: 18%;
-                right: -25px;   /* was -18px – further right */
+                right: -25px;
             }
         }
     </style>
@@ -1546,26 +1604,119 @@
             <div class="shooting-star star3"></div>
             <div class="shooting-star star4"></div>
 
-            <div class="ufo-wrapper">
-                <div class="ufo">
-                    <svg viewBox="0 0 80 40">
-                        <rect x="8" y="16" width="64" height="8" fill="#7bc6ff"/>
-                        <rect x="4" y="18" width="72" height="6" fill="#5aadee"/>
-                        <rect x="12" y="14" width="56" height="4" fill="#aee3ff"/>
-                        <rect x="32" y="4" width="16" height="12" fill="#cceeff"/>
-                        <rect x="36" y="2" width="8" height="4" fill="#eef5ff"/>
-                        <rect x="12" y="22" width="6" height="3" fill="#ff4d4d"/>
-                        <rect x="26" y="22" width="6" height="3" fill="#ffaa44"/>
-                        <rect x="40" y="22" width="6" height="3" fill="#44ffaa"/>
-                        <rect x="54" y="22" width="6" height="3" fill="#ff66cc"/>
-                        <rect x="68" y="22" width="4" height="3" fill="#ff4d4d"/>
-                        <rect x="34" y="24" width="12" height="12" fill="#cceeff" opacity="0.5"/>
-                        <rect x="36" y="28" width="8" height="8" fill="#aee3ff" opacity="0.4"/>
-                    </svg>
-                    <div class="ufo-trail"></div>
-                </div>
+            <!-- ─── FLYING VIKING SHIP with FAIRY DUST TRAIL ─── -->
+            <div class="ship-wrapper">
+                <svg class="ship-svg" viewBox="-100 0 240 120" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+                    <!-- ── FAIRY DUST TRAIL (behind ship) ── -->
+                    <g transform="translate(85, 42)">
+                        <!-- Large glowing dust -->
+                        <rect class="dust d1" x="0" y="0" width="10" height="10" fill="#ff44ff" style="animation-delay: 0s;" />
+                        <rect class="dust d2" x="-20" y="-8" width="8" height="8" fill="#44ffff" style="animation-delay: 0.15s;" />
+                        <rect class="dust d3" x="-40" y="6" width="12" height="12" fill="#ffcc44" style="animation-delay: 0.3s;" />
+                        <rect class="dust d4" x="-60" y="-12" width="8" height="8" fill="#ffffff" style="animation-delay: 0.45s;" />
+                        <rect class="dust d5" x="-80" y="10" width="10" height="10" fill="#ff66aa" style="animation-delay: 0.6s;" />
+                        <rect class="dust d6" x="-100" y="-6" width="8" height="8" fill="#88ff88" style="animation-delay: 0.75s;" />
+                        <rect class="dust d7" x="-120" y="4" width="12" height="12" fill="#ff88ff" style="animation-delay: 0.9s;" />
+                        <rect class="dust d8" x="-140" y="-10" width="8" height="8" fill="#88ccff" style="animation-delay: 1.05s;" />
+                        
+                        <!-- Small glitter -->
+                        <rect class="dust d9" x="-10" y="-15" width="5" height="5" fill="#ffffff" style="animation-delay: 0.2s;" />
+                        <rect class="dust d10" x="-30" y="12" width="6" height="6" fill="#ffdd88" style="animation-delay: 0.35s;" />
+                        <rect class="dust d11" x="-50" y="-16" width="5" height="5" fill="#88ddff" style="animation-delay: 0.5s;" />
+                        <rect class="dust d12" x="-70" y="14" width="6" height="6" fill="#ff88dd" style="animation-delay: 0.65s;" />
+                        <rect class="dust d13" x="-90" y="-14" width="5" height="5" fill="#ddff88" style="animation-delay: 0.8s;" />
+                        <rect class="dust d14" x="-110" y="8" width="6" height="6" fill="#88ffdd" style="animation-delay: 0.95s;" />
+                        <rect class="dust d15" x="-130" y="-8" width="5" height="5" fill="#ffdd44" style="animation-delay: 1.1s;" />
+                        <rect class="dust d16" x="-150" y="2" width="5" height="5" fill="#ff66aa" style="animation-delay: 1.25s;" />
+                        <rect class="dust d17" x="-160" y="-12" width="6" height="6" fill="#44ffff" style="animation-delay: 1.4s;" />
+                        
+                        <!-- Star sparkles -->
+                        <path class="sparkle s1" d="M0,-8 L3,-3 L8,0 L3,3 L0,8 L-3,3 L-8,0 L-3,-3 Z" fill="#ffdd44" style="animation-delay: 0.1s;" />
+                        <path class="sparkle s2" d="M-25,-14 L-22,-10 L-18,-12 L-22,-6 L-26,-12 Z" fill="#88ddff" style="animation-delay: 0.4s;" />
+                        <path class="sparkle s3" d="M-45,10 L-42,14 L-38,12 L-42,18 L-46,12 Z" fill="#ff88dd" style="animation-delay: 0.7s;" />
+                        <path class="sparkle s4" d="M-65,-16 L-62,-12 L-58,-14 L-62,-8 L-66,-14 Z" fill="#ffffff" style="animation-delay: 1.0s;" />
+                        <path class="sparkle s5" d="M-85,12 L-82,16 L-78,14 L-82,20 L-86,14 Z" fill="#88ff88" style="animation-delay: 1.3s;" />
+                        <path class="sparkle s6" d="M-105,-10 L-102,-6 L-98,-8 L-102,-2 L-106,-8 Z" fill="#ff66aa" style="animation-delay: 1.6s;" />
+                        <path class="sparkle s7" d="M-125,6 L-122,10 L-118,8 L-122,14 L-126,8 Z" fill="#44ffff" style="animation-delay: 1.9s;" />
+                        <path class="sparkle s8" d="M-145,-12 L-142,-8 L-138,-10 L-142,-4 L-146,-10 Z" fill="#ffcc44" style="animation-delay: 2.2s;" />
+                    </g>
+
+                    <!-- ── SHIP GROUP ── -->
+                    <g transform="translate(60, 0)">
+                        <!-- ── DRAGON HEAD (Bow - Left) ── -->
+                        <rect x="4" y="16" width="8" height="6" fill="#f1c40f"/>
+                        <rect x="2" y="18" width="4" height="4" fill="#e67e22"/>
+                        <rect x="6" y="14" width="4" height="4" fill="#f39c12"/>
+                        <rect x="0" y="20" width="2" height="2" fill="#e74c3c"/>
+
+                        <!-- ── BOW STEM ── -->
+                        <rect x="8" y="22" width="6" height="24" fill="#4a2e14"/>
+
+                        <!-- ── STERN STEM (Right) ── -->
+                        <rect x="76" y="22" width="6" height="24" fill="#4a2e14"/>
+
+                        <!-- ── HULL MAIN ── -->
+                        <rect x="14" y="40" width="62" height="10" fill="#5d3a1a"/>
+                        <rect x="10" y="46" width="66" height="6" fill="#3d2510"/>
+                        <rect x="14" y="50" width="62" height="4" fill="#2d1a0a"/>
+
+                        <!-- ── BOWSPRIT & BOW SAIL ── -->
+                        <rect x="2" y="38" width="12" height="2" fill="#4a2e14"/>
+                        <g class="sail sail-2">
+                            <rect x="4" y="30" width="8" height="10" fill="#e74c3c"/>
+                            <rect x="4" y="34" width="8" height="2" fill="#ecf0f1"/>
+                        </g>
+
+                        <!-- ── MAST ── -->
+                        <rect x="45" y="6" width="4" height="34" fill="#5d4037"/>
+                        <!-- Yardarm -->
+                        <rect x="30" y="6" width="32" height="4" fill="#5d4037"/>
+
+                        <!-- ── MAIN SAIL ── -->
+                        <g class="sail">
+                            <rect x="32" y="10" width="28" height="28" fill="#e74c3c"/>
+                            <rect x="32" y="16" width="28" height="4" fill="#ecf0f1"/>
+                            <rect x="32" y="24" width="28" height="4" fill="#ecf0f1"/>
+                            <rect x="32" y="32" width="28" height="4" fill="#ecf0f1"/>
+                        </g>
+
+                        <!-- ── RIGGING ── -->
+                        <line x1="47" y1="10" x2="14" y2="40" stroke="#7f8c8d" stroke-width="1" opacity="0.6"/>
+                        <line x1="47" y1="10" x2="78" y2="40" stroke="#7f8c8d" stroke-width="1" opacity="0.6"/>
+                        <line x1="45" y1="6" x2="4" y2="38" stroke="#7f8c8d" stroke-width="1" opacity="0.4"/>
+
+                        <!-- ── SHIELDS ── -->
+                        <circle cx="22" cy="42" r="4" fill="#3498db" stroke="#2c3e50" stroke-width="1"/>
+                        <circle cx="22" cy="42" r="1.5" fill="#2980b9"/>
+                        <circle cx="32" cy="42" r="4" fill="#e74c3c" stroke="#2c3e50" stroke-width="1"/>
+                        <circle cx="32" cy="42" r="1.5" fill="#c0392b"/>
+                        <circle cx="42" cy="42" r="4" fill="#f1c40f" stroke="#2c3e50" stroke-width="1"/>
+                        <circle cx="42" cy="42" r="1.5" fill="#f39c12"/>
+                        <circle cx="52" cy="42" r="4" fill="#2ecc71" stroke="#2c3e50" stroke-width="1"/>
+                        <circle cx="52" cy="42" r="1.5" fill="#27ae60"/>
+                        <circle cx="62" cy="42" r="4" fill="#9b59b6" stroke="#2c3e50" stroke-width="1"/>
+                        <circle cx="62" cy="42" r="1.5" fill="#8e44ad"/>
+                        <circle cx="72" cy="42" r="4" fill="#e67e22" stroke="#2c3e50" stroke-width="1"/>
+                        <circle cx="72" cy="42" r="1.5" fill="#d35400"/>
+
+                        <!-- ── OARS ── -->
+                        <rect x="18" y="44" width="12" height="2" fill="#d4a373"/>
+                        <rect x="28" y="44" width="12" height="2" fill="#d4a373"/>
+                        <rect x="38" y="44" width="12" height="2" fill="#d4a373"/>
+                        <rect x="48" y="44" width="12" height="2" fill="#d4a373"/>
+                        <rect x="58" y="44" width="12" height="2" fill="#d4a373"/>
+                        <rect x="68" y="44" width="12" height="2" fill="#d4a373"/>
+
+                        <!-- ── ENGINE HOUSING (visual only, no flame) ── -->
+                        <rect x="82" y="36" width="8" height="12" fill="#667788"/>
+                        <rect x="82" y="36" width="8" height="3" fill="#99aabb"/>
+                        <rect x="82" y="45" width="8" height="3" fill="#99aabb"/>
+                        <rect x="84" y="39" width="4" height="6" fill="#aabbcc" opacity="0.6"/>
+                    </g>
+                </svg>
             </div>
 
+            <!-- Background clouds (not part of ship) -->
             <div class="pixel-cloud cloud1"></div>
             <div class="pixel-cloud cloud2"></div>
             <div class="pixel-cloud cloud3"></div>
@@ -1904,9 +2055,9 @@
         <div class="single-col-grid reveal"><div class="pixel-card-col"><h3>⚡ PERFORMANCE ADS</h3><p style="margin-bottom:1rem;">Meta · TikTok · YouTube – retention hooks</p><div class="card-grid">
                     <div class="video-card" data-video="https://drive.google.com/file/d/1E6mpifJ3rVQPjk7qAeOYVMS-uE3G7shw/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png" alt="Apollonia" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Apollonia</div><div class="brand-desc">jewelry brand based in Rome</div></div></div>
                     <div class="video-card" data-video="https://drive.google.com/file/d/19E4tXRQjILx9bsqsE2E2BvqmUFjRnbzH/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/V0NnMKkC/Screenshot-2025-10-15-143253.png" alt="Spacegoods" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Spacegoods</div><div class="brand-desc">Coffee Brand</div></div></div>
-                    <div class="video-card" data-video="https://drive.google.com/file/d/1OwSKlGW914YBiYtCZNb-QYm9gFVidkCM/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/v45d9WFZ/assetsads-hears-jpg.png" alt="Hears" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Hears</div><div class="brand-desc">World’s Most Innovative Earplugs</div></div></div>
+                    <div class="video-card" data-video="https://drive.google.com/file/d/1OwSKlGW914YBiYtCZNb-QYm9gFVidkCM/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/v45d9WFZ/assetsads-hears-jpg.png" alt="Hears" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Hears</div><div class="brand-desc">World's Most Innovative Earplugs</div></div></div>
                     <div class="video-card" data-video="https://drive.google.com/file/d/1sfls_UbXQlxGbFVifRXLPXLY_EgIIEVO/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/kVhp938Q/assetsmotion-panda-drum-jpg.png" alt="Panda Drum" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Panda Drum</div><div class="brand-desc">Best musical, relaxing instrument & educational gift for kids & adults</div></div></div>
-                    <div class="video-card" data-video="https://drive.google.com/file/d/1oIahcK3zkUwKBfD3ycSJNVGQ5-EHMNke/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/1Yn4YPH9/assetsads-incogni-jpg.png" alt="Incogni" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Incogni</div><div class="brand-desc">World’s #1 pick for Data Removal</div></div></div>
+                    <div class="video-card" data-video="https://drive.google.com/file/d/1oIahcK3zkUwKBfD3ycSJNVGQ5-EHMNke/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/1Yn4YPH9/assetsads-incogni-jpg.png" alt="Incogni" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Incogni</div><div class="brand-desc">World's #1 pick for Data Removal</div></div></div>
                 </div></div></div>
 
         <!-- ─── AI-ENHANCED ─── -->
@@ -2063,24 +2214,17 @@
         let fireInterval = null;
 
         function breatheFire() {
-            // Show fire
             fireGroup.classList.add('active');
-
-            // Clear any existing timeout
             if (fireTimeout) clearTimeout(fireTimeout);
-
-            // Hide fire after 2.5–3.5 seconds
             const burnDuration = 2500 + Math.random() * 1000;
             fireTimeout = setTimeout(() => {
                 fireGroup.classList.remove('active');
-                // Schedule next breath after 3–6 seconds
                 const restDuration = 3000 + Math.random() * 3000;
                 if (fireInterval) clearTimeout(fireInterval);
                 fireInterval = setTimeout(breatheFire, restDuration);
             }, burnDuration);
         }
 
-        // Start the fire breathing cycle after a short delay
         setTimeout(() => {
             breatheFire();
         }, 1200);
