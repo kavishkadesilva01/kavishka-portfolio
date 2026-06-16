@@ -1,1108 +1,2148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  
-  <!-- Primary SEO & Sharing -->
-  <title>Kavishka S. Silva | Video Editor & Motion Designer</title>
-  <meta name="title" content="Kavishka S. Silva | Video Editor & Motion Designer">
-  <meta name="description" content="5,000+ deliverables • 25M+ organic views. Performance ads, documentary series, AI-assisted creative pipeline. Ready to build your next campaign?">
-  
-  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kavishkadesilva01.github.io/kavishka-portfolio/">
-  <meta property="og:title" content="Kavishka S. Silva | Video Editor & Motion Designer">
-  <meta property="og:description" content="5,000+ deliverables • 25M+ organic views. Performance ads, documentary series, AI-assisted creative pipeline.">
-  <meta property="og:image" content="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://kavishkadesilva01.github.io/kavishka-portfolio/">
-  <meta property="twitter:title" content="Kavishka S. Silva | Video Editor & Motion Designer">
-  <meta property="twitter:description" content="5,000+ deliverables • 25M+ organic views. Performance ads, documentary series, AI-assisted creative pipeline.">
-  <meta property="twitter:image" content="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png">
-  
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      image-rendering: crisp-edges;
-      image-rendering: pixelated;
-      cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon points="2,2 14,8 8,10 2,14" fill="%23e9c46a" stroke="%231b1738" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="%23ff6b9d"/></svg>') 4 4, auto;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      background: #0b0a1f;
-      font-family: 'VT323', monospace;
-      color: #f5f2e8;
-      line-height: 1.4;
-      padding: 1.5rem 0.8rem;
-      min-height: 100vh;
-      position: relative;
-      overflow-x: hidden;
-    }
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 999;
-      background: repeating-linear-gradient(0deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 2px, transparent 2px, transparent 6px);
-    }
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -2;
-      background: radial-gradient(circle at 20% 30%, #2a1f5e, #0f0c2a 70%, #030018);
-    }
-    .dither {
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      background-image: linear-gradient(45deg, rgba(255,240,160,0.08) 25%, transparent 25%), linear-gradient(-45deg, rgba(255,200,100,0.05) 25%, transparent 25%);
-      background-size: 4px 4px;
-      pointer-events: none;
-    }
-    .pixel-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      background: #1b1738;
-      border: 4px solid #e9c46a;
-      box-shadow: 0 0 0 4px #0b0a1f, 6px 6px 0 #6a4e9b, inset 0 1px 4px rgba(255,235,150,0.3);
-      padding: 1.5rem;
-      position: relative;
-    }
-    .pixel-nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 4px solid #6a4e9b;
-      margin-bottom: 2rem;
-      background: linear-gradient(90deg, #201b42, #1b1738);
-    }
-    .logo {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 1.2rem;
-      background: #e9c46a;
-      color: #1b1738;
-      padding: 0.3rem 0.8rem;
-      display: inline-block;
-      box-shadow: 3px 3px 0 #8b6b4b;
-    }
-    .nav-links { display: flex; gap: 0.8rem; flex-wrap: wrap; }
-    .nav-links a {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.6rem;
-      text-decoration: none;
-      color: #f2e8cf;
-      background: #2a235a;
-      padding: 0.4rem 0.7rem;
-      border: 2px solid #8b72be;
-      transition: 0.08s linear;
-      box-shadow: inset 0 1px 0 rgba(255,255,200,0.3), 0 2px 0 #3a2a6a;
-    }
-    .nav-links a:hover {
-      background: #e9c46a;
-      color: #1b1738;
-      transform: translateY(-2px);
-    }
-    .btn-pixel {
-      background: #0af;
-      color: #0b0a1f;
-      border: none;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.75rem;
-      padding: 0.6rem 1.2rem;
-      display: inline-block;
-      box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 4px 4px 0 #0b0a1f;
-      transition: 0.1s linear;
-      font-weight: bold;
-      cursor: pointer;
-      animation: pulseGlow 1.2s infinite;
-      position: relative;
-      z-index: 20;
-      text-decoration: none;
-    }
-    @keyframes pulseGlow {
-      0% { box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 4px 4px 0 #0b0a1f; background: #0af; }
-      50% { box-shadow: 0 0 0 4px #fff, 0 0 0 10px #3cf, 6px 6px 0 #0b0a1f; background: #3cf; }
-      100% { box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 4px 4px 0 #0b0a1f; background: #0af; }
-    }
-    .btn-pixel:hover {
-      transform: translate(2px, 2px);
-      box-shadow: 0 0 0 2px #fff, 0 0 0 5px #e9c46a, 2px 2px 0 #0b0a1f;
-      background: #e9c46a;
-      animation: none;
-      text-decoration: none;
-    }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin: 1.5rem 0 3rem;
-      position: relative;
-      overflow: hidden;
-      border: 4px solid #8b72be;
-      background: linear-gradient(145deg, #2a235a 0%, #19153a 60%, #0f0c2a 100%);
-      padding: 1.5rem;
-      box-shadow: inset 0 0 20px rgba(100,70,200,0.3), 6px 6px 0 #1b1738;
-      min-height: 480px;
-    }
-    .starfield {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      background-image: radial-gradient(2px 2px at 10% 20%, #fff 100%, transparent), radial-gradient(1px 1px at 80% 10%, #fff 100%, transparent), radial-gradient(2px 2px at 50% 50%, #ffe9a8 100%, transparent), radial-gradient(1px 1px at 30% 70%, #fff 100%, transparent), radial-gradient(1px 1px at 90% 80%, #fff 100%, transparent), radial-gradient(1px 1px at 65% 35%, #aee3ff 100%, transparent), radial-gradient(1px 1px at 15% 90%, #fff 100%, transparent), radial-gradient(2px 2px at 75% 60%, #fff 100%, transparent);
-      background-repeat: repeat;
-      background-size: 300px 300px;
-      animation: twinkle 6s ease-in-out infinite alternate;
-      opacity: 0.7;
-    }
-    @keyframes twinkle { 0% { opacity: 0.4; } 100% { opacity: 0.9; } }
-    .shooting-star {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: white;
-      border-radius: 50%;
-      box-shadow: 0 0 8px 2px rgba(255,255,200,0.8);
-      z-index: 5;
-      pointer-events: none;
-      opacity: 0;
-    }
-    .star1 { top: 15%; left: -10px; animation: shootStar1 8s linear infinite; }
-    .star2 { top: 30%; left: -20px; animation: shootStar2 12s linear infinite 3s; }
-    .star3 { top: 8%; left: -5px; animation: shootStar3 10s linear infinite 6s; }
-    .star4 { top: 45%; left: -15px; animation: shootStar4 14s linear infinite 2s; }
-    @keyframes shootStar1 {
-      0% { transform: translate(0, 0) scale(1); opacity: 1; }
-      20% { opacity: 1; }
-      80% { opacity: 0.8; }
-      100% { transform: translate(110vw, 40vh) scale(0.2); opacity: 0; }
-    }
-    @keyframes shootStar2 {
-      0% { transform: translate(0, 0) scale(1); opacity: 1; }
-      25% { opacity: 1; }
-      75% { opacity: 0.7; }
-      100% { transform: translate(95vw, 50vh) scale(0.2); opacity: 0; }
-    }
-    @keyframes shootStar3 {
-      0% { transform: translate(0, 0) scale(1); opacity: 1; }
-      30% { opacity: 1; }
-      70% { opacity: 0.6; }
-      100% { transform: translate(120vw, 30vh) scale(0.2); opacity: 0; }
-    }
-    @keyframes shootStar4 {
-      0% { transform: translate(0, 0) scale(1); opacity: 1; }
-      20% { opacity: 1; }
-      80% { opacity: 0.8; }
-      100% { transform: translate(100vw, 60vh) scale(0.2); opacity: 0; }
-    }
-    .pixel-mountains {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 60%;
-      height: 170px;
-      z-index: 2;
-      pointer-events: none;
-    }
-    .pixel-mountains svg { width: 100%; height: 100%; display: block; }
-    .ufo-wrapper {
-      position: absolute;
-      z-index: 6;
-      pointer-events: none;
-      top: 68%;
-      left: -100px;
-      animation: moveUFO 20s linear infinite;
-    }
-    .ufo {
-      width: 60px;
-      height: 30px;
-      background: transparent;
-      position: relative;
-    }
-    .ufo svg {
-      width: 100%;
-      height: auto;
-      filter: drop-shadow(0 0 12px #0af);
-      animation: ufoFloat 0.8s ease-in-out infinite;
-    }
-    @keyframes ufoFloat {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-4px); }
-    }
-    .ufo-trail {
-      position: absolute;
-      top: 14px;
-      left: -20px;
-      width: 40px;
-      height: 8px;
-      pointer-events: none;
-      background: repeating-linear-gradient(90deg, #0af 0px, #0af 6px, #3cf 6px, #3cf 12px, #7cf 12px, #7cf 18px);
-      background-size: 36px 8px;
-      opacity: 0.9;
-      animation: trailPulse 0.3s steps(2) infinite;
-    }
-    @keyframes trailPulse {
-      0% { opacity: 0.9; transform: translateX(0); }
-      100% { opacity: 0.4; transform: translateX(3px); }
-    }
-    @keyframes moveUFO {
-      0% { left: -100px; }
-      100% { left: calc(100% + 100px); }
-    }
-    .pixel-moon {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 64px;
-      height: 64px;
-      background: radial-gradient(circle at 30% 35%, #ffe8b6, #f5c85a);
-      box-shadow: 0 0 0 4px #1b1738, 0 0 0 6px #ffda88, 0 0 20px 8px rgba(255,220,100,0.6);
-      border-radius: 50%;
-      z-index: 1;
-      transition: all 0.2s ease;
-      cursor: default;
-    }
-    .pixel-moon:hover { background: #ffdd88; transform: scale(1.05); box-shadow: 0 0 0 4px #1b1738, 0 0 0 8px #ffea9e; }
-    .pixel-moon::before {
-      content: "";
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      background: #dbaa3a;
-      top: 16px;
-      left: 10px;
-      border-radius: 50%;
-      box-shadow: 24px 24px 0 #dbaa3a, 40px 10px 0 #c9922a;
-    }
-    .pixel-cloud {
-      position: absolute;
-      background: #5e569b;
-      opacity: 0.7;
-      box-shadow: 16px 0 0 0 #4a4280, 32px -8px 0 0 #5e569b, 8px -8px 0 0 #4a4280, -8px 0 0 0 #6a62ab;
-      z-index: 1;
-    }
-    .cloud1 { width: 28px; height: 18px; top: 30px; left: -60px; animation: driftCloud 45s linear infinite; }
-    .cloud2 { width: 28px; height: 18px; top: 90px; left: -120px; animation: driftCloud 65s linear infinite; opacity: 0.5; }
-    .cloud3 { width: 24px; height: 14px; top: 50px; left: -200px; animation: driftCloud 55s linear infinite; opacity: 0.6; }
-    @keyframes driftCloud { from { transform: translateX(0); } to { transform: translateX(1400px); } }
-    .pixel-forest {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 110px;
-      z-index: 3;
-      pointer-events: none;
-    }
-    .pixel-forest svg { width: 100%; height: 100%; display: block; }
-    .pixel-dragon {
-      position: absolute;
-      width: 300px;
-      height: auto;
-      top: 28%;
-      right: 2%;
-      filter: drop-shadow(0 0 12px #2ecc71) drop-shadow(0 4px 10px rgba(0,0,0,0.5));
-      animation: dragonFlyMoon 9s ease-in-out infinite;
-      z-index: 4;
-      cursor: default;
-    }
-    @keyframes dragonFlyMoon { 0%,100% { transform: translate(0, 0) rotate(-1deg); } 50% { transform: translate(-12px, -10px) rotate(1deg); } }
-    .pixel-dragon .wing { animation: flap 0.5s steps(3) infinite; transform-origin: 50% 30%; }
-    @keyframes flap { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(0.65); } }
-    .extra-star {
-      position: absolute;
-      font-size: 1rem;
-      z-index: 2;
-      animation: starTwinkle 2.8s ease-in-out infinite;
-      text-shadow: 0 0 8px currentColor;
-    }
-    .star-a { top: 6%;  left: 12%; color: #ffe484; animation-delay: 0s; }
-    .star-b { top: 14%; left: 28%; font-size: 1.2rem; color: #7bc6ff; animation-delay: 0.6s; }
-    .star-c { top: 30%; left: 6%; color: #ffb07c; animation-delay: 1.2s; }
-    .star-d { top: 4%;  right: 32%; color: #ff9f7c; animation-delay: 1.8s; }
-    .star-e { top: 22%; right: 36%; color: #ffd966; animation-delay: 0.3s; }
-    @keyframes starTwinkle { 0%,100% { opacity: 0.2; transform: scale(0.7); } 50% { opacity: 1; transform: scale(1.3); } }
-    .unicorn-wrapper {
-      position: absolute;
-      top: 8%;
-      left: -160px;
-      width: 80px;
-      z-index: 5;
-      animation: unicornFly 14s linear infinite;
-      pointer-events: none;
-    }
-    @keyframes unicornFly {
-      0%   { left: -160px; top: 8%; }
-      30%  { top: 6%; }
-      60%  { top: 10%; }
-      100% { left: 105%; top: 8%; }
-    }
-    .unicorn-svg { width: 80px; height: auto; }
-    .rainbow-trail {
-      position: absolute;
-      right: 70px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 120px;
-      height: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      pointer-events: none;
-    }
-    .rainbow-trail span { display: block; height: 3px; border-radius: 0; opacity: 0.75; }
-    .rb1 { background: #ff3333; width: 120px; }
-    .rb2 { background: #ff8c00; width: 110px; }
-    .rb3 { background: #ffe000; width: 100px; }
-    .rb4 { background: #33cc33; width: 88px; }
-    .rb5 { background: #3399ff; width: 74px; }
-    .rb6 { background: #9933ff; width: 58px; }
-    
-    .hero-left {
-      flex: 2;
-      position: relative;
-      z-index: 10;
-      background: rgba(20, 18, 43, 0.75);
-      backdrop-filter: blur(3px);
-      padding: 1.2rem;
-      border: 2px solid #e9c46a;
-      box-shadow: 6px 6px 0 #1b1738;
-    }
-    .pixel-badge {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.55rem;
-      background: #e9c46a;
-      color: #1b1738;
-      display: inline-block;
-      padding: 0.2rem 0.7rem;
-      border: 2px solid #0b0a1f;
-      margin-bottom: 1rem;
-      box-shadow: 4px 4px 0 #8b6b4b;
-    }
-    h1 {
-      font-family: 'Press Start 2P', monospace;
-      font-size: clamp(1.4rem, 5vw, 2.2rem);
-      line-height: 1.3;
-      margin-bottom: 1rem;
-      color: #fff6e0;
-      text-shadow: 4px 4px 0 #6a4e9b;
-    }
-    .accent-pixel {
-      background: #72b0b0;
-      color: #0b0a1f;
-      display: inline-block;
-      padding: 0.1rem 0.3rem;
-      box-shadow: 4px 4px 0 #3a5e5e;
-      position: relative;
-      animation: chromaGlitch 5s ease-in-out infinite;
-    }
-    @keyframes chromaGlitch {
-      0%,  89% { text-shadow: none; letter-spacing: normal; }
-      90%       { text-shadow: -3px 0 #ff0040, 3px 0 #00cfff; letter-spacing: 0.04em; }
-      91%       { text-shadow: 3px 0 #ff0040, -3px 0 #00cfff; letter-spacing: -0.02em; }
-      92%       { text-shadow: -2px 0 #ff0040, 2px 0 #00cfff; letter-spacing: 0.02em; }
-      93%       { text-shadow: none; letter-spacing: normal; }
-      96%       { text-shadow: -4px 0 #ff0040, 4px 0 #00cfff; letter-spacing: 0.06em; }
-      97%       { text-shadow: none; letter-spacing: normal; }
-      100%      { text-shadow: none; letter-spacing: normal; }
-    }
-    .hero-desc { font-size: 1.2rem; max-width: 520px; margin-bottom: 1rem; font-weight: 500; color: #ffffff; text-shadow: 2px 2px 0 #1b1738; }
-    .stats-pixel {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      background: rgba(30,24,60,0.8);
-      border: 2px solid #e9c46a;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-    .stat { flex: 1; min-width: 100px; text-align: center; }
-    .stat .num {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 1.3rem;
-      color: #7bc6ff;
-      text-shadow: 2px 2px 0 #1b1738;
-    }
-    .xp-bar {
-      width: 100%;
-      height: 8px;
-      background: #2a235a;
-      margin-top: 6px;
-      border: 1px solid #8b72be;
-    }
-    .xp-fill {
-      width: 0%;
-      height: 100%;
-      background: #7bc6ff;
-      transition: width 0.3s ease-out;
-      will-change: width;
-    }
-    .hero-right {
-      flex: 1;
-      background: #25204a;
-      color: #ffdfa5;
-      padding: 0.6rem 1rem;
-      border: 4px solid #e9c46a;
-      text-align: center;
-      font-size: 0.9rem;
-      font-family: 'VT323', monospace;
-      position: relative;
-      z-index: 10;
-      align-self: flex-end;
-      box-shadow: 8px 8px 0 #3a2a6a;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-    .social-label {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.42rem;
-      color: #e9c46a;
-      letter-spacing: 0.06em;
-    }
-    .social-grid { display: flex; gap: 0.5rem; }
-    .social-icon-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      text-decoration: none;
-      border: 3px solid transparent;
-      box-shadow: 3px 3px 0 #0b0a1f;
-      transition: 0.08s linear;
-    }
-    .social-icon-btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 #0b0a1f; filter: brightness(1.15); }
-    .social-icon-btn svg { width: 52%; height: 52%; display: block; }
-    .s-email     { background: #EA4335; border-color: #c0392b; }
-    .s-linkedin  { background: #0A66C2; border-color: #084f9a; }
-    .s-whatsapp  { background: #25D366; border-color: #1aad50; }
-    .s-instagram { background: #E1306C; border-color: #b02558; }
-    .clients-section {
-      margin: 3rem 0;
-      background: rgba(26, 22, 55, 0.7);
-      border: 3px solid #8b72be;
-      padding: 2rem 0;
-      overflow: hidden;
-    }
-    .clients-title {
-      text-align: center;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-      color: #e9c46a;
-      text-shadow: 2px 2px 0 #4b2e83;
-    }
-    .carousel-track {
-      display: flex;
-      animation: scrollClients 30s linear infinite;
-      width: fit-content;
-    }
-    .client-item { flex: 0 0 auto; width: 160px; text-align: center; margin: 0 1rem; }
-    .client-logo {
-      width: 100px; height: 100px; margin: 0 auto 0.8rem; background: #2a235a; border-radius: 50%;
-      border: 3px solid #e9c46a; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;
-      box-shadow: 0 4px 0 #6a4e9b; transition: transform 0.2s ease;
-      overflow: hidden;
-    }
-    .client-logo img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-    }
-    .client-item:hover .client-logo { transform: scale(1.05); border-color: #7bc6ff; }
-    .client-name { font-family: 'Press Start 2P', monospace; font-size: 0.6rem; color: #f2e8cf; line-height: 1.3; }
-    .client-name small { font-family: 'VT323', monospace; font-size: 0.55rem; color: #7bc6ff; display: block; }
-    @keyframes scrollClients {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .single-col-grid { display: block; margin: 1.5rem 0; }
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1.2rem;
-    }
-    .video-card {
-      background: #24204a;
-      border: 4px solid #6a4e9b;
-      transition: 0.1s ease;
-      cursor: pointer;
-      box-shadow: 0 4px 0 #2a235a;
-      position: relative;
-    }
-    .video-card:hover {
-      transform: translate(-3px, -3px);
-      box-shadow: 8px 8px 0 #72b0b0;
-      border-color: #e9c46a;
-    }
-    .thumb {
-      aspect-ratio: 9 / 16;
-      background: #0b0a1f;
-      position: relative;
-      overflow: hidden;
-    }
-    .thumb img { width: 100%; height: 100%; object-fit: cover; image-rendering: pixelated; }
-    .play-pixel {
-      position: absolute;
-      inset: 0;
-      background: rgba(20,18,43,0.7);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      backdrop-filter: blur(2px);
-      transition: 0.1s;
-    }
-    .video-card:hover .play-pixel { opacity: 1; }
-    .pixel-play-btn {
-      background: #e9c46a;
-      width: 50px; height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 3px solid #1b1738;
-      font-size: 2rem;
-      box-shadow: 0 0 0 2px #ffefc0;
-      border-radius: 0;
-    }
-    .pixel-play-btn span { font-size: 2rem; transform: translateX(3px); color: #1b1738; }
-    .card-info { padding: 0.6rem; background: #191539; }
-    .card-title { font-weight: 700; font-size: 1rem; font-family: 'VT323', monospace; color: #ffefc0; }
-    .brand-desc {
-      font-size: 0.65rem;
-      color: #b8b0e0;
-      margin-top: 0.2rem;
-      line-height: 1.2;
-      font-family: 'VT323', monospace;
-    }
-    .section-head { margin: 2.5rem 0 1.2rem; border-left: 8px solid #e9c46a; padding-left: 1rem; }
-    .section-tag { font-family: 'Press Start 2P', monospace; font-size: 0.6rem; background: #6a4e9b; color: #f2e8cf; display: inline-block; padding: 0.2rem 0.8rem; border: 2px solid #8b72be; }
-    h2 { font-family: 'Press Start 2P', monospace; font-size: 1.2rem; margin-top: 0.6rem; color: #ffefc0; }
-    .docu-card {
-      flex: 0 0 280px;
-      min-width: 280px;
-      background: #211d46;
-      border: 3px solid #6a4e9b;
-      cursor: pointer;
-      transition: 0.1s;
-      box-shadow: 0 3px 0 #2a235a;
-    }
-    .docu-card:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: 6px 6px 0 #72b0b0;
-      border-color: #e9c46a;
-    }
-    .docu-thumb {
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border-bottom: 2px solid #6a4e9b;
-    }
-    .docu-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .episodes-btn-small {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.55rem;
-      background: linear-gradient(135deg, #f39c12, #e67e22);
-      color: #ffffff !important;
-      padding: 0.55rem 1rem;
-      text-decoration: none;
-      border: 2px solid #ffd966;
-      box-shadow: 3px 3px 0 #000, 0 0 12px rgba(243,156,18,0.6);
-      white-space: nowrap;
-      flex-shrink: 0;
-      animation: breathe 1.5s ease-in-out infinite;
-      display: inline-block;
-      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
-      letter-spacing: 0.06em;
-      font-weight: bold;
-    }
-    .episodes-btn-small:hover {
-      background: linear-gradient(135deg, #ffb347, #f39c12);
-      border-color: #fff;
-      animation: none;
-      transform: translate(-2px, -2px);
-      box-shadow: 5px 5px 0 #000, 0 0 20px rgba(255,179,71,0.8);
-      color: #fff !important;
-    }
-    @keyframes breathe {
-      0% { transform: scale(0.96); box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.4); }
-      50% { transform: scale(1.02); box-shadow: 0 0 0 8px rgba(243, 156, 18, 0.2); }
-      100% { transform: scale(0.96); box-shadow: 0 0 0 0 rgba(243, 156, 18, 0); }
-    }
-    .filmstrip-scroll {
-      display: flex;
-      overflow: hidden;
-      padding: 0.5rem 0 1rem;
-      position: relative;
-    }
-    .filmstrip-track {
-      display: flex;
-      gap: 1rem;
-      animation: filmscroll 18s linear infinite;
-      width: max-content;
-    }
-    .filmstrip-track:hover { animation-play-state: paused; }
-    .filmstrip-track-rtl {
-      display: flex;
-      gap: 1rem;
-      animation: filmscroll-rtl 22s linear infinite;
-      width: max-content;
-    }
-    .filmstrip-track-rtl:hover { animation-play-state: paused; }
-    @keyframes filmscroll-rtl {
-      0%   { transform: translateX(-50%); }
-      100% { transform: translateX(0); }
-    }
-    @keyframes filmscroll {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    .filmstrip-card {
-      flex: 0 0 280px;
-      text-decoration: none;
-      color: inherit;
-      border: 3px solid #6a4e9b;
-      box-shadow: 4px 4px 0 #0b0a1f;
-      transition: border-color 0.1s linear, box-shadow 0.1s linear;
-      display: block;
-      background: #13103a;
-    }
-    .filmstrip-card:hover {
-      border-color: #e9c46a;
-      box-shadow: 6px 6px 0 #0b0a1f;
-    }
-    .filmstrip-thumb { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; }
-    .filmstrip-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .filmstrip-label {
-      padding: 0.4rem 0.6rem;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.5rem;
-      color: #e9c46a;
-      background: #13103a;
-    }
-    .yt-play-overlay {
-      position: absolute; inset: 0;
-      display: flex; align-items: center; justify-content: center;
-      background: rgba(0,0,0,0.35);
-      font-size: 2.5rem; color: #fff;
-      opacity: 0; transition: opacity 0.15s;
-    }
-    .yt-thumb-card:hover .yt-play-overlay { opacity: 1; }
-    @keyframes ytPulse {
-      0%, 100% { box-shadow: 3px 3px 0 #000, 0 0 0 0 rgba(255,0,0,0.6); }
-      50%       { box-shadow: 3px 3px 0 #000, 0 0 0 8px rgba(255,0,0,0); }
-    }
-    footer {
-      margin-top: 2rem;
-      border-top: 4px solid #6a4e9b;
-      padding-top: 1.5rem;
-    }
-    .footer-cta {
-      background: rgba(42, 35, 90, 0.6);
-      border: 2px solid #e9c46a;
-      padding: 1.2rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .footer-cta p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      font-family: 'VT323', monospace;
-      letter-spacing: 0.5px;
-      color: #f5f2e8;
-    }
-    .footer-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.2rem;
-      margin: 1rem 0 0.5rem;
-    }
-    .footer-btn {
-      background: #0af;
-      color: #0b0a1f;
-      text-decoration: none;
-      font-family: 'Press Start 2P', monospace;
-      font-size: 0.65rem;
-      padding: 0.5rem 1rem;
-      border: 2px solid #fff;
-      box-shadow: 3px 3px 0 #0b0a1f;
-      transition: 0.08s linear;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      animation: pulseDiscovery 1.2s infinite;
-    }
-    .footer-btn:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: 5px 5px 0 #0b0a1f;
-      background: #e9c46a;
-      color: #1b1738;
-      animation: none;
-    }
-    @keyframes pulseDiscovery {
-      0% { box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 3px 3px 0 #0b0a1f; background: #0af; }
-      50% { box-shadow: 0 0 0 4px #fff, 0 0 0 10px #3cf, 5px 5px 0 #0b0a1f; background: #3cf; }
-      100% { box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 3px 3px 0 #0b0a1f; background: #0af; }
-    }
-    .footer-social {
-      display: flex;
-      justify-content: center;
-      gap: 0.8rem;
-      margin-bottom: 1rem;
-    }
-    .footer-social-icon {
-      width: 36px;
-      height: 36px;
-      background: #2a235a;
-      border: 2px solid #8b72be;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: 0.08s linear;
-      text-decoration: none;
-    }
-    .footer-social-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: #e9c46a;
-    }
-    .footer-social-icon:hover {
-      transform: translate(-2px, -2px);
-      background: #e9c46a;
-      border-color: #fff;
-    }
-    .footer-social-icon:hover svg { fill: #1b1738; }
-    .footer-copyright {
-      text-align: center;
-      font-size: 0.7rem;
-      border-top: 1px solid #4a4280;
-      padding-top: 1rem;
-      margin-top: 0.5rem;
-      color: #cbc3f0;
-    }
-    .modal { display: none; position: fixed; inset: 0; background: rgba(5,4,15,0.94); z-index: 1000; align-items: center; justify-content: center; }
-    .modal.open { display: flex; }
-    .modal-content { width: auto; max-width: 380px; height: 85vh; aspect-ratio: 9/16; background: black; border: 6px solid #e9c46a; position: relative; box-shadow: 12px 12px 0 #6a4e9b; }
-    .modal-content.wide { width: 90%; max-width: 980px; height: auto; aspect-ratio: 16/9; }
-    .modal-content iframe { width: 100%; height: 100%; }
-    .close-modal { position: absolute; top: -35px; right: 0; background: #1b1738; color: #e9c46a; font-family: 'Press Start 2P', monospace; font-size: 0.7rem; padding: 0.2rem 0.8rem; border: 2px solid #e9c46a; cursor: pointer; text-decoration: none; }
-    .reveal { opacity: 0; transform: translateY(15px); transition: 0.4s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    @media (max-width: 700px) {
-      .pixel-container { padding: 1rem; }
-      .hero { flex-direction: column; min-height: auto; }
-      .hero-left, .hero-right { width: 100%; }
-      .hero-right { align-self: stretch; margin-top: 0.5rem; min-height: 200px; }
-      .pixel-dragon { width: 180px; top: 5%; right: 1%; }
-      .stat .num { font-size: 1rem; }
-      .pixel-mountains { width: 80%; height: 130px; }
-      .shooting-star { transform: scale(0.7); }
-      .ufo-wrapper { top: 72%; animation-duration: 14s; }
-      .ufo { transform: scale(0.7); }
-      .client-item { width: 120px; }
-      .client-logo { width: 70px; height: 70px; font-size: 1.8rem; }
-      .client-name { font-size: 0.5rem; }
-      .carousel-track { animation-duration: 20s; }
-      .pixel-nav { flex-direction: column; align-items: flex-start; gap: 0.6rem; }
-      .nav-links { flex-wrap: wrap; gap: 0.4rem; }
-      .nav-links a { font-size: 0.55rem; padding: 0.5rem 0.6rem; min-height: 36px; display: flex; align-items: center; }
-      .logo { font-size: 0.9rem; }
-      .btn-pixel { font-size: 0.6rem; padding: 0.5rem 0.8rem; width: 100%; text-align: center; }
-      h2 { font-size: 0.9rem; }
-      .section-tag { font-size: 0.5rem; }
-      .stats-pixel { gap: 0.8rem; }
-      .docu-card { min-width: 200px; }
-      .footer-btn { font-size: 0.5rem; padding: 0.4rem 0.7rem; }
-      .footer-cta p { font-size: 0.85rem; }
-    }
-    @media (max-width: 400px) {
-      .nav-links a { font-size: 0.48rem; padding: 0.45rem 0.5rem; }
-      .logo { font-size: 0.75rem; }
-      .docu-card { min-width: 180px; }
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+    <!-- Primary SEO & Sharing -->
+    <title>Kavishka S. Silva | Video Editor & Motion Designer</title>
+    <meta name="title" content="Kavishka S. Silva | Video Editor & Motion Designer" />
+    <meta name="description" content="5,000+ deliverables • 25M+ organic views. Performance ads, documentary series, AI-assisted creative pipeline. Ready to build your next campaign?" />
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kavishkadesilva01.github.io/kavishka-portfolio/" />
+    <meta property="og:title" content="Kavishka S. Silva | Video Editor & Motion Designer" />
+    <meta property="og:description" content="5,000+ deliverables • 25M+ organic views. Performance ads, documentary series, AI-assisted creative pipeline." />
+    <meta property="og:image" content="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kavishkadesilva01.github.io/kavishka-portfolio/" />
+    <meta property="twitter:title" content="Kavishka S. Silva | Video Editor & Motion Designer" />
+    <meta property="twitter:description" content="5,000+ deliverables • 25M+ organic views. Performance ads, documentary series, AI-assisted creative pipeline." />
+    <meta property="twitter:image" content="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+        /* ── RESET & BASE ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon points="2,2 14,8 8,10 2,14" fill="%23e9c46a" stroke="%231b1738" stroke-width="1"/><circle cx="8" cy="8" r="1.5" fill="%23ff6b9d"/></svg>') 4 4, auto;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background: #0b0a1f;
+            font-family: 'VT323', monospace;
+            color: #f5f2e8;
+            line-height: 1.4;
+            padding: 1.5rem 0.8rem;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 999;
+            background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0px, rgba(0, 0, 0, 0.08) 2px, transparent 2px, transparent 6px);
+        }
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            background: radial-gradient(circle at 20% 30%, #2a1f5e, #0f0c2a 70%, #030018);
+        }
+        .dither {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background-image: linear-gradient(45deg, rgba(255, 240, 160, 0.08) 25%, transparent 25%), linear-gradient(-45deg, rgba(255, 200, 100, 0.05) 25%, transparent 25%);
+            background-size: 4px 4px;
+            pointer-events: none;
+        }
+
+        /* ── CONTAINER ── */
+        .pixel-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: #1b1738;
+            border: 4px solid #e9c46a;
+            box-shadow: 0 0 0 4px #0b0a1f, 6px 6px 0 #6a4e9b, inset 0 1px 4px rgba(255, 235, 150, 0.3);
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        /* ── NAV ── */
+        .pixel-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 4px solid #6a4e9b;
+            margin-bottom: 2rem;
+            background: linear-gradient(90deg, #201b42, #1b1738);
+        }
+        .logo {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.2rem;
+            background: #e9c46a;
+            color: #1b1738;
+            padding: 0.3rem 0.8rem;
+            display: inline-block;
+            box-shadow: 3px 3px 0 #8b6b4b;
+        }
+        .nav-links {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            text-decoration: none;
+            color: #f2e8cf;
+            background: #2a235a;
+            padding: 0.4rem 0.7rem;
+            border: 2px solid #8b72be;
+            transition: 0.08s linear;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 200, 0.3), 0 2px 0 #3a2a6a;
+        }
+        .nav-links a:hover {
+            background: #e9c46a;
+            color: #1b1738;
+            transform: translateY(-2px);
+        }
+        .btn-pixel {
+            background: #0af;
+            color: #0b0a1f;
+            border: none;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.75rem;
+            padding: 0.6rem 1.2rem;
+            display: inline-block;
+            box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 4px 4px 0 #0b0a1f;
+            transition: 0.1s linear;
+            font-weight: bold;
+            cursor: pointer;
+            animation: pulseGlow 1.2s infinite;
+            position: relative;
+            z-index: 20;
+            text-decoration: none;
+        }
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 4px 4px 0 #0b0a1f;
+                background: #0af;
+            }
+            50% {
+                box-shadow: 0 0 0 4px #fff, 0 0 0 10px #3cf, 6px 6px 0 #0b0a1f;
+                background: #3cf;
+            }
+            100% {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 4px 4px 0 #0b0a1f;
+                background: #0af;
+            }
+        }
+        .btn-pixel:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 0 0 0 2px #fff, 0 0 0 5px #e9c46a, 2px 2px 0 #0b0a1f;
+            background: #e9c46a;
+            animation: none;
+            text-decoration: none;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1.5rem 0 3rem;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid #8b72be;
+            background: linear-gradient(145deg, #2a235a 0%, #19153a 60%, #0f0c2a 100%);
+            padding: 1.5rem;
+            box-shadow: inset 0 0 20px rgba(100, 70, 200, 0.3), 6px 6px 0 #1b1738;
+            min-height: 480px;
+        }
+        .starfield {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-image:
+                radial-gradient(2px 2px at 10% 20%, #fff 100%, transparent),
+                radial-gradient(1px 1px at 80% 10%, #fff 100%, transparent),
+                radial-gradient(2px 2px at 50% 50%, #ffe9a8 100%, transparent),
+                radial-gradient(1px 1px at 30% 70%, #fff 100%, transparent),
+                radial-gradient(1px 1px at 90% 80%, #fff 100%, transparent),
+                radial-gradient(1px 1px at 65% 35%, #aee3ff 100%, transparent),
+                radial-gradient(1px 1px at 15% 90%, #fff 100%, transparent),
+                radial-gradient(2px 2px at 75% 60%, #fff 100%, transparent);
+            background-repeat: repeat;
+            background-size: 300px 300px;
+            animation: twinkle 6s ease-in-out infinite alternate;
+            opacity: 0.7;
+        }
+        @keyframes twinkle {
+            0% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 0.9;
+            }
+        }
+
+        /* Shooting stars */
+        .shooting-star {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 8px 2px rgba(255, 255, 200, 0.8);
+            z-index: 5;
+            pointer-events: none;
+            opacity: 0;
+        }
+        .star1 {
+            top: 15%;
+            left: -10px;
+            animation: shootStar1 8s linear infinite;
+        }
+        .star2 {
+            top: 30%;
+            left: -20px;
+            animation: shootStar2 12s linear infinite 3s;
+        }
+        .star3 {
+            top: 8%;
+            left: -5px;
+            animation: shootStar3 10s linear infinite 6s;
+        }
+        .star4 {
+            top: 45%;
+            left: -15px;
+            animation: shootStar4 14s linear infinite 2s;
+        }
+        @keyframes shootStar1 {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translate(110vw, 40vh) scale(0.2);
+                opacity: 0;
+            }
+        }
+        @keyframes shootStar2 {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            25% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translate(95vw, 50vh) scale(0.2);
+                opacity: 0;
+            }
+        }
+        @keyframes shootStar3 {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            30% {
+                opacity: 1;
+            }
+            70% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translate(120vw, 30vh) scale(0.2);
+                opacity: 0;
+            }
+        }
+        @keyframes shootStar4 {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translate(100vw, 60vh) scale(0.2);
+                opacity: 0;
+            }
+        }
+
+        /* Clouds, moon, mountains, forest, UFO, unicorn… */
+        .pixel-cloud {
+            position: absolute;
+            background: #5e569b;
+            opacity: 0.7;
+            box-shadow: 16px 0 0 0 #4a4280, 32px -8px 0 0 #5e569b, 8px -8px 0 0 #4a4280, -8px 0 0 0 #6a62ab;
+            z-index: 1;
+        }
+        .cloud1 {
+            width: 28px;
+            height: 18px;
+            top: 30px;
+            left: -60px;
+            animation: driftCloud 45s linear infinite;
+        }
+        .cloud2 {
+            width: 28px;
+            height: 18px;
+            top: 90px;
+            left: -120px;
+            animation: driftCloud 65s linear infinite;
+            opacity: 0.5;
+        }
+        .cloud3 {
+            width: 24px;
+            height: 14px;
+            top: 50px;
+            left: -200px;
+            animation: driftCloud 55s linear infinite;
+            opacity: 0.6;
+        }
+        @keyframes driftCloud {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(1400px);
+            }
+        }
+
+        .pixel-mountains {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 60%;
+            height: 170px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .pixel-mountains svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .pixel-forest {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 110px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .pixel-forest svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .pixel-moon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 64px;
+            height: 64px;
+            background: radial-gradient(circle at 30% 35%, #ffe8b6, #f5c85a);
+            box-shadow: 0 0 0 4px #1b1738, 0 0 0 6px #ffda88, 0 0 20px 8px rgba(255, 220, 100, 0.6);
+            border-radius: 50%;
+            z-index: 1;
+            transition: all 0.2s ease;
+            cursor: default;
+        }
+        .pixel-moon:hover {
+            background: #ffdd88;
+            transform: scale(1.05);
+            box-shadow: 0 0 0 4px #1b1738, 0 0 0 8px #ffea9e;
+        }
+        .pixel-moon::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #dbaa3a;
+            top: 16px;
+            left: 10px;
+            border-radius: 50%;
+            box-shadow: 24px 24px 0 #dbaa3a, 40px 10px 0 #c9922a;
+        }
+
+        .ufo-wrapper {
+            position: absolute;
+            z-index: 6;
+            pointer-events: none;
+            top: 68%;
+            left: -100px;
+            animation: moveUFO 20s linear infinite;
+        }
+        .ufo {
+            width: 60px;
+            height: 30px;
+            background: transparent;
+            position: relative;
+        }
+        .ufo svg {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 12px #0af);
+            animation: ufoFloat 0.8s ease-in-out infinite;
+        }
+        @keyframes ufoFloat {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+        /* ── UFO TRAIL – DECREASED ── */
+        .ufo-trail {
+            position: absolute;
+            top: 14px;
+            left: -20px;
+            width: 25px;
+            height: 8px;
+            pointer-events: none;
+            background: repeating-linear-gradient(90deg, #0af 0px, #0af 6px, #3cf 6px, #3cf 12px, #7cf 12px, #7cf 18px);
+            background-size: 18px 8px;
+            opacity: 0.9;
+            animation: trailPulse 0.3s steps(2) infinite;
+        }
+        @keyframes trailPulse {
+            0% {
+                opacity: 0.9;
+                transform: translateX(0);
+            }
+            100% {
+                opacity: 0.4;
+                transform: translateX(3px);
+            }
+        }
+        @keyframes moveUFO {
+            0% {
+                left: -100px;
+            }
+            100% {
+                left: calc(100% + 100px);
+            }
+        }
+
+        .extra-star {
+            position: absolute;
+            font-size: 1rem;
+            z-index: 2;
+            animation: starTwinkle 2.8s ease-in-out infinite;
+            text-shadow: 0 0 8px currentColor;
+        }
+        .star-a {
+            top: 6%;
+            left: 12%;
+            color: #ffe484;
+            animation-delay: 0s;
+        }
+        .star-b {
+            top: 14%;
+            left: 28%;
+            font-size: 1.2rem;
+            color: #7bc6ff;
+            animation-delay: 0.6s;
+        }
+        .star-c {
+            top: 30%;
+            left: 6%;
+            color: #ffb07c;
+            animation-delay: 1.2s;
+        }
+        .star-d {
+            top: 4%;
+            right: 32%;
+            color: #ff9f7c;
+            animation-delay: 1.8s;
+        }
+        .star-e {
+            top: 22%;
+            right: 36%;
+            color: #ffd966;
+            animation-delay: 0.3s;
+        }
+        @keyframes starTwinkle {
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(0.7);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.3);
+            }
+        }
+
+        .unicorn-wrapper {
+            position: absolute;
+            top: 8%;
+            left: -160px;
+            width: 80px;
+            z-index: 5;
+            animation: unicornFly 14s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes unicornFly {
+            0% {
+                left: -160px;
+                top: 8%;
+            }
+            30% {
+                top: 6%;
+            }
+            60% {
+                top: 10%;
+            }
+            100% {
+                left: 105%;
+                top: 8%;
+            }
+        }
+        .unicorn-svg {
+            width: 80px;
+            height: auto;
+        }
+        .rainbow-trail {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 120px;
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            pointer-events: none;
+        }
+        .rainbow-trail span {
+            display: block;
+            height: 3px;
+            border-radius: 0;
+            opacity: 0.75;
+        }
+        .rb1 {
+            background: #ff3333;
+            width: 120px;
+        }
+        .rb2 {
+            background: #ff8c00;
+            width: 110px;
+        }
+        .rb3 {
+            background: #ffe000;
+            width: 100px;
+        }
+        .rb4 {
+            background: #33cc33;
+            width: 88px;
+        }
+        .rb5 {
+            background: #3399ff;
+            width: 74px;
+        }
+        .rb6 {
+            background: #9933ff;
+            width: 58px;
+        }
+
+        /* ── DRAGON – BIGGER, LOWER, PUSHED FURTHER RIGHT ── */
+        .dragon-wrapper {
+            position: absolute;
+            z-index: 7;
+            top: 34%;
+            right: -55px;       /* was -35px – even further right */
+            width: 480px;
+            height: auto;
+            filter: drop-shadow(0 0 20px #2ecc71) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7));
+            animation: dragonFlyMoon 9s ease-in-out infinite;
+            cursor: default;
+            overflow: visible;
+        }
+        @keyframes dragonFlyMoon {
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(-1deg);
+            }
+            50% {
+                transform: translate(-8px, -8px) rotate(1deg);
+            }
+        }
+        .pixel-dragon {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .pixel-dragon .wing {
+            animation: flap 0.5s steps(3) infinite;
+            transform-origin: 50% 30%;
+        }
+        @keyframes flap {
+            0%,
+            100% {
+                transform: scaleY(1);
+            }
+            50% {
+                transform: scaleY(0.65);
+            }
+        }
+
+        /* ── FIRE BREATH ── */
+        .fire-group {
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+        .fire-group.active {
+            opacity: 1;
+        }
+        .fire-group .flame {
+            animation: flicker 0.25s ease-in-out infinite alternate;
+            transform-origin: 90% 60%;
+        }
+        .fire-group .flame-1 {
+            animation-duration: 0.18s;
+            animation-delay: 0s;
+        }
+        .fire-group .flame-2 {
+            animation-duration: 0.22s;
+            animation-delay: 0.06s;
+        }
+        .fire-group .flame-3 {
+            animation-duration: 0.2s;
+            animation-delay: 0.12s;
+        }
+        .fire-group .flame-4 {
+            animation-duration: 0.28s;
+            animation-delay: 0.03s;
+        }
+        .fire-group .flame-5 {
+            animation-duration: 0.16s;
+            animation-delay: 0.09s;
+        }
+        .fire-group .ember {
+            animation: emberFloat 0.6s ease-out infinite alternate;
+        }
+        .fire-group .ember-1 {
+            animation-duration: 0.7s;
+            animation-delay: 0.1s;
+        }
+        .fire-group .ember-2 {
+            animation-duration: 0.5s;
+            animation-delay: 0.3s;
+        }
+        .fire-group .ember-3 {
+            animation-duration: 0.8s;
+            animation-delay: 0.0s;
+        }
+        .fire-group .ember-4 {
+            animation-duration: 0.55s;
+            animation-delay: 0.45s;
+        }
+        .fire-group .ember-5 {
+            animation-duration: 0.65s;
+            animation-delay: 0.2s;
+        }
+
+        @keyframes flicker {
+            0% {
+                transform: scale(0.92) translate(2px, 0);
+                opacity: 0.8;
+            }
+            25% {
+                transform: scale(1.08) translate(-3px, -2px);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(0.96) translate(1px, 1px);
+                opacity: 0.9;
+            }
+            75% {
+                transform: scale(1.04) translate(-1px, -1px);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.0) translate(0, 0);
+                opacity: 0.85;
+            }
+        }
+        @keyframes emberFloat {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.9;
+            }
+            100% {
+                transform: translate(-30px, -20px) scale(0.3);
+                opacity: 0;
+            }
+        }
+
+        /* ── HERO LEFT / RIGHT ── */
+        .hero-left {
+            flex: 2;
+            position: relative;
+            z-index: 10;
+            background: rgba(20, 18, 43, 0.75);
+            backdrop-filter: blur(3px);
+            padding: 1.2rem;
+            border: 2px solid #e9c46a;
+            box-shadow: 6px 6px 0 #1b1738;
+        }
+        .pixel-badge {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.62rem;
+            background: #e9c46a;
+            color: #1b1738;
+            display: inline-block;
+            padding: 0.2rem 0.7rem;
+            border: 2px solid #0b0a1f;
+            margin-bottom: 1rem;
+            box-shadow: 4px 4px 0 #8b6b4b;
+        }
+        h1 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: clamp(1.4rem, 5vw, 2.2rem);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: #fff6e0;
+            text-shadow: 4px 4px 0 #6a4e9b;
+        }
+        .accent-pixel {
+            background: #72b0b0;
+            color: #0b0a1f;
+            display: inline-block;
+            padding: 0.1rem 0.3rem;
+            box-shadow: 4px 4px 0 #3a5e5e;
+            position: relative;
+            animation: chromaGlitch 5s ease-in-out infinite;
+        }
+        @keyframes chromaGlitch {
+            0%,
+            89% {
+                text-shadow: none;
+                letter-spacing: normal;
+            }
+            90% {
+                text-shadow: -3px 0 #ff0040, 3px 0 #00cfff;
+                letter-spacing: 0.04em;
+            }
+            91% {
+                text-shadow: 3px 0 #ff0040, -3px 0 #00cfff;
+                letter-spacing: -0.02em;
+            }
+            92% {
+                text-shadow: -2px 0 #ff0040, 2px 0 #00cfff;
+                letter-spacing: 0.02em;
+            }
+            93% {
+                text-shadow: none;
+                letter-spacing: normal;
+            }
+            96% {
+                text-shadow: -4px 0 #ff0040, 4px 0 #00cfff;
+                letter-spacing: 0.06em;
+            }
+            97% {
+                text-shadow: none;
+                letter-spacing: normal;
+            }
+            100% {
+                text-shadow: none;
+                letter-spacing: normal;
+            }
+        }
+        .hero-desc {
+            font-size: 1.2rem;
+            max-width: 520px;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            color: #ffffff;
+            text-shadow: 2px 2px 0 #1b1738;
+        }
+        .stats-pixel {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            background: rgba(30, 24, 60, 0.8);
+            border: 2px solid #e9c46a;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .stat {
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
+        }
+        .stat .num {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.3rem;
+            color: #7bc6ff;
+            text-shadow: 2px 2px 0 #1b1738;
+        }
+        .xp-bar {
+            width: 100%;
+            height: 8px;
+            background: #2a235a;
+            margin-top: 6px;
+            border: 1px solid #8b72be;
+        }
+        .xp-fill {
+            width: 0%;
+            height: 100%;
+            background: #7bc6ff;
+            transition: width 0.3s ease-out;
+            will-change: width;
+        }
+        .hero-right {
+            flex: 1;
+            background: #25204a;
+            color: #ffdfa5;
+            padding: 0.6rem 1rem;
+            border: 4px solid #e9c46a;
+            text-align: center;
+            font-size: 0.9rem;
+            font-family: 'VT323', monospace;
+            position: relative;
+            z-index: 10;
+            align-self: flex-end;
+            box-shadow: 8px 8px 0 #3a2a6a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        .social-label {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.52rem;
+            color: #e9c46a;
+            letter-spacing: 0.06em;
+        }
+        .social-grid {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .social-icon-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            text-decoration: none;
+            border: 3px solid transparent;
+            box-shadow: 3px 3px 0 #0b0a1f;
+            transition: 0.08s linear;
+        }
+        .social-icon-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #0b0a1f;
+            filter: brightness(1.15);
+        }
+        .social-icon-btn svg {
+            width: 52%;
+            height: 52%;
+            display: block;
+        }
+        .s-email {
+            background: #EA4335;
+            border-color: #c0392b;
+        }
+        .s-linkedin {
+            background: #0A66C2;
+            border-color: #084f9a;
+        }
+        .s-whatsapp {
+            background: #25D366;
+            border-color: #1aad50;
+        }
+        .s-instagram {
+            background: #E1306C;
+            border-color: #b02558;
+        }
+
+        /* ── CLIENTS CAROUSEL ── */
+        .clients-section {
+            margin: 3rem 0;
+            background: rgba(26, 22, 55, 0.7);
+            border: 3px solid #8b72be;
+            padding: 2rem 0;
+            overflow: hidden;
+        }
+        .clients-title {
+            text-align: center;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #e9c46a;
+            text-shadow: 2px 2px 0 #4b2e83;
+        }
+        .carousel-track {
+            display: flex;
+            animation: scrollClients 30s linear infinite;
+            width: fit-content;
+        }
+        .client-item {
+            flex: 0 0 auto;
+            width: 160px;
+            text-align: center;
+            margin: 0 1rem;
+        }
+        .client-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 0.8rem;
+            background: #2a235a;
+            border-radius: 50%;
+            border: 3px solid #e9c46a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 0 #6a4e9b;
+            transition: transform 0.2s ease;
+            overflow: hidden;
+        }
+        .client-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .client-item:hover .client-logo {
+            transform: scale(1.05);
+            border-color: #7bc6ff;
+        }
+        .client-name {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            color: #f2e8cf;
+            line-height: 1.3;
+        }
+        .client-name small {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.7rem;
+            color: #7bc6ff;
+            display: block;
+        }
+        @keyframes scrollClients {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ── CARDS ── */
+        .single-col-grid {
+            display: block;
+            margin: 1.5rem 0;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.2rem;
+        }
+        .video-card {
+            background: #24204a;
+            border: 4px solid #6a4e9b;
+            transition: 0.1s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #2a235a;
+            position: relative;
+        }
+        .video-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0 #72b0b0;
+            border-color: #e9c46a;
+        }
+        .thumb {
+            aspect-ratio: 9 / 16;
+            background: #0b0a1f;
+            position: relative;
+            overflow: hidden;
+        }
+        .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            image-rendering: pixelated;
+        }
+        .play-pixel {
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 18, 43, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            backdrop-filter: blur(2px);
+            transition: 0.1s;
+        }
+        .video-card:hover .play-pixel {
+            opacity: 1;
+        }
+        .pixel-play-btn {
+            background: #e9c46a;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #1b1738;
+            font-size: 2rem;
+            box-shadow: 0 0 0 2px #ffefc0;
+            border-radius: 0;
+        }
+        .pixel-play-btn span {
+            font-size: 2rem;
+            transform: translateX(3px);
+            color: #1b1738;
+        }
+        .card-info {
+            padding: 0.6rem;
+            background: #191539;
+        }
+        .card-title {
+            font-weight: 700;
+            font-size: 1rem;
+            font-family: 'VT323', monospace;
+            color: #ffefc0;
+        }
+        .brand-desc {
+            font-size: 0.78rem;
+            color: #b8b0e0;
+            margin-top: 0.2rem;
+            line-height: 1.4;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 0.01em;
+        }
+
+        .section-head {
+            margin: 2.5rem 0 1.2rem;
+            border-left: 8px solid #e9c46a;
+            padding-left: 1rem;
+        }
+        .section-tag {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            background: #6a4e9b;
+            color: #f2e8cf;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border: 2px solid #8b72be;
+        }
+        h2 {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 1.2rem;
+            margin-top: 0.6rem;
+            color: #ffefc0;
+        }
+
+        /* ── DOCUMENTARY CARDS ── */
+        .docu-card {
+            flex: 0 0 280px;
+            min-width: 280px;
+            background: #211d46;
+            border: 3px solid #6a4e9b;
+            cursor: pointer;
+            transition: 0.1s;
+            box-shadow: 0 3px 0 #2a235a;
+        }
+        .docu-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0 #72b0b0;
+            border-color: #e9c46a;
+        }
+        .docu-thumb {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-bottom: 2px solid #6a4e9b;
+        }
+        .docu-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .episodes-btn-small {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.55rem;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: #ffffff !important;
+            padding: 0.55rem 1rem;
+            text-decoration: none;
+            border: 2px solid #ffd966;
+            box-shadow: 3px 3px 0 #000, 0 0 12px rgba(243, 156, 18, 0.6);
+            white-space: nowrap;
+            flex-shrink: 0;
+            animation: breathe 1.5s ease-in-out infinite;
+            display: inline-block;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+            letter-spacing: 0.06em;
+            font-weight: bold;
+        }
+        .episodes-btn-small:hover {
+            background: linear-gradient(135deg, #ffb347, #f39c12);
+            border-color: #fff;
+            animation: none;
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #000, 0 0 20px rgba(255, 179, 71, 0.8);
+            color: #fff !important;
+        }
+        @keyframes breathe {
+            0% {
+                transform: scale(0.96);
+                box-shadow: 0 0 0 0 rgba(243, 156, 18, 0.4);
+            }
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 8px rgba(243, 156, 18, 0.2);
+            }
+            100% {
+                transform: scale(0.96);
+                box-shadow: 0 0 0 0 rgba(243, 156, 18, 0);
+            }
+        }
+
+        .filmstrip-scroll {
+            display: flex;
+            overflow: hidden;
+            padding: 0.5rem 0 1rem;
+            position: relative;
+        }
+        .filmstrip-track {
+            display: flex;
+            gap: 1rem;
+            animation: filmscroll 18s linear infinite;
+            width: max-content;
+        }
+        .filmstrip-track:hover {
+            animation-play-state: paused;
+        }
+        .filmstrip-track-rtl {
+            display: flex;
+            gap: 1rem;
+            animation: filmscroll-rtl 22s linear infinite;
+            width: max-content;
+        }
+        .filmstrip-track-rtl:hover {
+            animation-play-state: paused;
+        }
+        @keyframes filmscroll-rtl {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        @keyframes filmscroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .filmstrip-card {
+            flex: 0 0 280px;
+            text-decoration: none;
+            color: inherit;
+            border: 3px solid #6a4e9b;
+            box-shadow: 4px 4px 0 #0b0a1f;
+            transition: border-color 0.1s linear, box-shadow 0.1s linear;
+            display: block;
+            background: #13103a;
+        }
+        .filmstrip-card:hover {
+            border-color: #e9c46a;
+            box-shadow: 6px 6px 0 #0b0a1f;
+        }
+        .filmstrip-thumb {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+        .filmstrip-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .filmstrip-label {
+            padding: 0.4rem 0.6rem;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.6rem;
+            color: #e9c46a;
+            background: #13103a;
+        }
+        .yt-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.35);
+            font-size: 2.5rem;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.15s;
+        }
+        .yt-thumb-card:hover .yt-play-overlay {
+            opacity: 1;
+        }
+        @keyframes ytPulse {
+            0%,
+            100% {
+                box-shadow: 3px 3px 0 #000, 0 0 0 0 rgba(255, 0, 0, 0.6);
+            }
+            50% {
+                box-shadow: 3px 3px 0 #000, 0 0 0 8px rgba(255, 0, 0, 0);
+            }
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            margin-top: 2rem;
+            border-top: 4px solid #6a4e9b;
+            padding-top: 1.5rem;
+        }
+        .footer-cta {
+            background: rgba(42, 35, 90, 0.6);
+            border: 2px solid #e9c46a;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .footer-cta p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'VT323', monospace;
+            letter-spacing: 0.5px;
+            color: #f5f2e8;
+        }
+        .footer-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .footer-btn {
+            background: #0af;
+            color: #0b0a1f;
+            text-decoration: none;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.65rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid #fff;
+            box-shadow: 3px 3px 0 #0b0a1f;
+            transition: 0.08s linear;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            animation: pulseDiscovery 1.2s infinite;
+        }
+        .footer-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 #0b0a1f;
+            background: #e9c46a;
+            color: #1b1738;
+            animation: none;
+        }
+        @keyframes pulseDiscovery {
+            0% {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 3px 3px 0 #0b0a1f;
+                background: #0af;
+            }
+            50% {
+                box-shadow: 0 0 0 4px #fff, 0 0 0 10px #3cf, 5px 5px 0 #0b0a1f;
+                background: #3cf;
+            }
+            100% {
+                box-shadow: 0 0 0 2px #fff, 0 0 0 5px #0af, 3px 3px 0 #0b0a1f;
+                background: #0af;
+            }
+        }
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        .footer-social-icon {
+            width: 36px;
+            height: 36px;
+            background: #2a235a;
+            border: 2px solid #8b72be;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.08s linear;
+            text-decoration: none;
+        }
+        .footer-social-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #e9c46a;
+        }
+        .footer-social-icon:hover {
+            transform: translate(-2px, -2px);
+            background: #e9c46a;
+            border-color: #fff;
+        }
+        .footer-social-icon:hover svg {
+            fill: #1b1738;
+        }
+        .footer-copyright {
+            text-align: center;
+            font-size: 0.7rem;
+            border-top: 1px solid #4a4280;
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+            color: #cbc3f0;
+        }
+
+        /* ── MODAL ── */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(5, 4, 15, 0.94);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal.open {
+            display: flex;
+        }
+        .modal-content {
+            width: auto;
+            max-width: 380px;
+            height: 85vh;
+            aspect-ratio: 9/16;
+            background: black;
+            border: 6px solid #e9c46a;
+            position: relative;
+            box-shadow: 12px 12px 0 #6a4e9b;
+        }
+        .modal-content.wide {
+            width: 90%;
+            max-width: 980px;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+        .modal-content iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .close-modal {
+            position: absolute;
+            top: -35px;
+            right: 0;
+            background: #1b1738;
+            color: #e9c46a;
+            font-family: 'Press Start 2P', monospace;
+            font-size: 0.7rem;
+            padding: 0.2rem 0.8rem;
+            border: 2px solid #e9c46a;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /* ── REVEAL ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(15px);
+            transition: 0.4s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 700px) {
+            .pixel-container {
+                padding: 1rem;
+            }
+            .hero {
+                flex-direction: column;
+                min-height: auto;
+            }
+            .hero-left,
+            .hero-right {
+                width: 100%;
+            }
+            .hero-right {
+                align-self: stretch;
+                margin-top: 0.5rem;
+                min-height: 200px;
+            }
+            .dragon-wrapper {
+                width: 280px;
+                top: 20%;
+                right: -35px;   /* was -25px – further right */
+            }
+            .stat .num {
+                font-size: 1rem;
+            }
+            .pixel-mountains {
+                width: 80%;
+                height: 130px;
+            }
+            .shooting-star {
+                transform: scale(0.7);
+            }
+            .ufo-wrapper {
+                top: 72%;
+                animation-duration: 14s;
+            }
+            .ufo {
+                transform: scale(0.7);
+            }
+            .client-item {
+                width: 120px;
+            }
+            .client-logo {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8rem;
+            }
+            .client-name {
+                font-size: 0.55rem;
+            }
+            .carousel-track {
+                animation-duration: 20s;
+            }
+            .pixel-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 0.4rem;
+            }
+            .nav-links a {
+                font-size: 0.55rem;
+                padding: 0.5rem 0.6rem;
+                min-height: 36px;
+                display: flex;
+                align-items: center;
+            }
+            .logo {
+                font-size: 0.9rem;
+            }
+            .btn-pixel {
+                font-size: 0.6rem;
+                padding: 0.5rem 0.8rem;
+                width: 100%;
+                text-align: center;
+            }
+            h2 {
+                font-size: 0.9rem;
+            }
+            .section-tag {
+                font-size: 0.5rem;
+            }
+            .stats-pixel {
+                gap: 0.8rem;
+            }
+            .docu-card {
+                min-width: 200px;
+            }
+            .footer-btn {
+                font-size: 0.55rem;
+                padding: 0.4rem 0.7rem;
+            }
+            .footer-cta p {
+                font-size: 0.85rem;
+            }
+        }
+        @media (max-width: 400px) {
+            .nav-links a {
+                font-size: 0.48rem;
+                padding: 0.45rem 0.5rem;
+            }
+            .logo {
+                font-size: 0.75rem;
+            }
+            .docu-card {
+                min-width: 180px;
+            }
+            .dragon-wrapper {
+                width: 200px;
+                top: 18%;
+                right: -25px;   /* was -18px – further right */
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="dither"></div>
-<div class="pixel-container">
-  <div class="pixel-nav">
-    <div class="logo">K.S. SILVA</div>
-    <div class="nav-links">
-      <a href="#perf">PERF.</a>
-      <a href="#fullai">AI GEN</a>
-      <a href="#docu">DOCS</a>
-      <a href="#youtube">YT</a>
-    </div>
-    <a href="https://calendly.com/kavishkasugandika81/30min" target="_blank" class="btn-pixel">📼 HIRE ME</a>
-  </div>
 
-  <!-- Hero -->
-  <div class="hero reveal" id="heroScene">
-    <div class="starfield"></div>
-    <div class="shooting-star star1"></div>
-    <div class="shooting-star star2"></div>
-    <div class="shooting-star star3"></div>
-    <div class="shooting-star star4"></div>
-    <div class="ufo-wrapper"><div class="ufo"><svg viewBox="0 0 80 40"><rect x="8" y="16" width="64" height="8" fill="#7bc6ff"/><rect x="4" y="18" width="72" height="6" fill="#5aadee"/><rect x="12" y="14" width="56" height="4" fill="#aee3ff"/><rect x="32" y="4" width="16" height="12" fill="#cceeff"/><rect x="36" y="2" width="8" height="4" fill="#eef5ff"/><rect x="12" y="22" width="6" height="3" fill="#ff4d4d"/><rect x="26" y="22" width="6" height="3" fill="#ffaa44"/><rect x="40" y="22" width="6" height="3" fill="#44ffaa"/><rect x="54" y="22" width="6" height="3" fill="#ff66cc"/><rect x="68" y="22" width="4" height="3" fill="#ff4d4d"/><rect x="34" y="24" width="12" height="12" fill="#cceeff" opacity="0.5"/><rect x="36" y="28" width="8" height="8" fill="#aee3ff" opacity="0.4"/></svg></div><div class="ufo-trail"></div></div>
-    <div class="pixel-cloud cloud1"></div>
-    <div class="pixel-cloud cloud2"></div>
-    <div class="pixel-cloud cloud3"></div>
-    <div class="pixel-moon" id="moon"></div>
-    <div class="pixel-mountains"><svg viewBox="0 0 320 170" preserveAspectRatio="none"><polygon points="120,170 160,70 190,100 220,40 250,90 280,55 320,85 320,170" fill="#7e8e9f"/><polygon points="160,70 175,95 145,95" fill="#ffffff"/><polygon points="220,40 235,65 205,65" fill="#f0f0f5"/><polygon points="280,55 295,80 265,80" fill="#ffffff"/><polygon points="100,170 140,35 180,80 230,20 270,70 310,35 320,170" fill="#aec6df"/><polygon points="140,35 160,70 120,70" fill="#ffffff"/><polygon points="230,20 255,55 205,55" fill="#f5f5ff"/><polygon points="310,35 320,60 295,60" fill="#ffffff"/><circle cx="150" cy="55" r="2" fill="#fff"/><circle cx="235" cy="42" r="2" fill="#fff"/><circle cx="275" cy="68" r="1.5" fill="#fff"/><circle cx="315" cy="48" r="1.5" fill="#fff"/></svg></div>
-    <div class="pixel-forest"><svg viewBox="0 0 320 60" preserveAspectRatio="none"><g fill="#180f3a"><rect x="120" y="14" width="6" height="46"/><rect x="118" y="10" width="2" height="4"/><rect x="122" y="10" width="2" height="4"/><rect x="126" y="10" width="2" height="4"/><rect x="124" y="18" width="36" height="42"/><rect x="124" y="10" width="2" height="8"/><rect x="128" y="10" width="2" height="8"/><rect x="132" y="10" width="2" height="8"/><rect x="136" y="10" width="2" height="8"/><rect x="148" y="10" width="2" height="8"/><rect x="152" y="10" width="2" height="8"/><rect x="156" y="10" width="2" height="8"/><rect x="160" y="10" width="2" height="8"/><rect x="158" y="14" width="6" height="46"/><rect x="156" y="10" width="2" height="4"/><rect x="160" y="10" width="2" height="4"/><rect x="164" y="10" width="2" height="4"/><rect x="138" y="2" width="8" height="20"/><rect x="136" y="-4" width="2" height="6"/><rect x="140" y="-4" width="2" height="6"/><rect x="144" y="-4" width="2" height="6"/><rect x="138" y="-8" width="2" height="6" fill="#e9c46a"/><rect x="140" y="-8" width="2" height="6" fill="#ff6b9d"/><rect x="158" y="-6" width="2" height="6" fill="#e9c46a"/><rect x="160" y="-6" width="2" height="6" fill="#7bc6ff"/><rect x="130" y="26" width="4" height="4" fill="#ffb84d"/><rect x="142" y="26" width="4" height="4" fill="#ffb84d"/><rect x="150" y="26" width="4" height="4" fill="#ffb84d"/><rect x="141" y="8" width="4" height="6" fill="#ffb84d"/></g><g fill="#102a16"><rect x="6" y="46" width="4" height="14"/><rect x="2" y="38" width="12" height="8"/><rect x="4" y="30" width="8" height="8"/><rect x="6" y="24" width="4" height="6"/><rect x="40" y="44" width="4" height="16"/><rect x="36" y="36" width="12" height="8"/><rect x="38" y="28" width="8" height="8"/><rect x="40" y="22" width="4" height="6"/><rect x="200" y="46" width="4" height="14"/><rect x="196" y="38" width="12" height="8"/><rect x="198" y="28" width="8" height="8"/><rect x="200" y="24" width="4" height="6"/><rect x="240" y="44" width="4" height="16"/><rect x="236" y="36" width="12" height="8"/><rect x="238" y="28" width="8" height="8"/><rect x="240" y="22" width="4" height="6"/><rect x="282" y="46" width="4" height="14"/><rect x="278" y="36" width="12" height="8"/><rect x="280" y="28" width="8" height="8"/><rect x="282" y="22" width="4" height="6"/></g><g fill="#061408"><rect x="-6" y="48" width="6" height="12"/><rect x="-12" y="38" width="18" height="10"/><rect x="-8" y="28" width="10" height="10"/><rect x="-6" y="20" width="6" height="8"/><rect x="22" y="50" width="6" height="10"/><rect x="16" y="40" width="18" height="10"/><rect x="20" y="30" width="10" height="10"/><rect x="22" y="22" width="6" height="8"/><rect x="60" y="48" width="6" height="12"/><rect x="54" y="38" width="18" height="10"/><rect x="58" y="28" width="10" height="10"/><rect x="60" y="22" width="6" height="8"/><rect x="180" y="50" width="6" height="10"/><rect x="174" y="40" width="18" height="10"/><rect x="178" y="28" width="10" height="10"/><rect x="180" y="22" width="6" height="8"/><rect x="222" y="48" width="6" height="12"/><rect x="216" y="38" width="18" height="10"/><rect x="220" y="28" width="10" height="10"/><rect x="222" y="22" width="6" height="8"/><rect x="262" y="50" width="6" height="10"/><rect x="256" y="38" width="18" height="10"/><rect x="260" y="28" width="10" height="10"/><rect x="262" y="22" width="6" height="8"/><rect x="300" y="48" width="6" height="12"/><rect x="294" y="38" width="18" height="10"/><rect x="298" y="28" width="10" height="10"/><rect x="300" y="22" width="6" height="8"/></g><rect x="0" y="58" width="320" height="2" fill="#03080a"/></svg></div>
-    <svg class="pixel-dragon" id="dragon" viewBox="0 0 100 65" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
-      <rect x="18" y="14" width="6" height="26" fill="#2ecc71"/><rect x="18" y="14" width="6" height="4" fill="#58e68a"/><rect x="14" y="20" width="4" height="14" fill="#27ae60"/><rect x="22" y="18" width="4" height="12" fill="#2ecc71"/>
-      <rect x="10" y="8" width="14" height="12" fill="#2ecc71"/><rect x="10" y="8" width="14" height="3" fill="#58e68a"/><rect x="14" y="12" width="5" height="4" fill="#1a2e1a"/><rect x="15" y="13" width="2" height="2" fill="#f5e030"/><rect x="16" y="13" width="1" height="1" fill="#ffffff"/>
-      <rect x="10" y="14" width="2" height="2" fill="#1e5a2e"/><rect x="12" y="2" width="3" height="6" fill="#f1c40f"/><rect x="16" y="0" width="3" height="5" fill="#f1c40f"/><rect x="8" y="4" width="3" height="5" fill="#f39c12"/>
-      <rect x="0" y="12" width="10" height="4" fill="#ff5500" opacity="0.8"/><rect x="2" y="10" width="6" height="2" fill="#ffaa00" opacity="0.7"/><rect x="4" y="15" width="6" height="2" fill="#ffaa00" opacity="0.7"/><rect x="0" y="16" width="4" height="2" fill="#ff7700" opacity="0.6"/>
-      <rect x="24" y="24" width="22" height="14" fill="#2ecc71"/><rect x="24" y="24" width="22" height="3" fill="#58e68a"/><rect x="26" y="30" width="18" height="3" fill="#27ae60"/><rect x="28" y="33" width="14" height="3" fill="#1e8449"/>
-      <rect x="46" y="28" width="8" height="6" fill="#2ecc71"/><rect x="54" y="30" width="6" height="5" fill="#27ae60"/><rect x="60" y="32" width="6" height="4" fill="#2ecc71"/><rect x="66" y="34" width="5" height="4" fill="#27ae60"/><rect x="71" y="36" width="4" height="3" fill="#1e8449"/><rect x="75" y="38" width="3" height="3" fill="#2ecc71"/><rect x="78" y="36" width="3" height="4" fill="#f1c40f"/><rect x="81" y="34" width="2" height="3" fill="#f39c12"/>
-      <g class="wing"><rect x="30" y="8" width="8" height="6" fill="#27ae60"/><rect x="38" y="4" width="12" height="8" fill="#2ecc71"/><rect x="50" y="2" width="10" height="12" fill="#1e8449"/><rect x="36" y="10" width="26" height="14" fill="#27ae60"/><rect x="40" y="16" width="22" height="8" fill="#2ecc71"/><rect x="30" y="8" width="18" height="2" fill="#58e68a"/><rect x="50" y="4" width="8" height="2" fill="#58e68a"/><rect x="44" y="6" width="2" height="18" fill="#1e8449" opacity="0.7"/><rect x="52" y="8" width="2" height="14" fill="#1e8449" opacity="0.7"/><rect x="60" y="10" width="2" height="10" fill="#1e8449" opacity="0.6"/><rect x="48" y="2" width="4" height="4" fill="#f1c40f"/><rect x="54" y="0" width="4" height="3" fill="#f39c12"/><rect x="62" y="0" width="3" height="3" fill="#f1c40f"/></g>
-      <g class="wing"><rect x="32" y="28" width="26" height="12" fill="#1e8449" opacity="0.85"/><rect x="36" y="32" width="22" height="10" fill="#27ae60" opacity="0.9"/><rect x="48" y="36" width="12" height="8" fill="#1e8449"/><rect x="56" y="38" width="8" height="6" fill="#2ecc71"/><rect x="52" y="32" width="2" height="10" fill="#145a32" opacity="0.6"/><rect x="60" y="34" width="2" height="8" fill="#145a32" opacity="0.5"/></g>
-      <rect x="28" y="36" width="6" height="5" fill="#27ae60"/><rect x="26" y="40" width="4" height="3" fill="#1e8449"/><rect x="30" y="41" width="2" height="3" fill="#f1c40f"/>
-      <rect x="38" y="36" width="6" height="5" fill="#27ae60"/><rect x="36" y="40" width="4" height="3" fill="#1e8449"/><rect x="40" y="41" width="2" height="3" fill="#f1c40f"/>
-      <rect x="28" y="22" width="3" height="4" fill="#f1c40f"/><rect x="34" y="20" width="3" height="5" fill="#f39c12"/><rect x="40" y="21" width="3" height="4" fill="#f1c40f"/><rect x="46" y="23" width="3" height="4" fill="#f39c12"/>
-    </svg>
-    <div class="extra-star star-a">★</div><div class="extra-star star-b">✦</div><div class="extra-star star-c">✧</div><div class="extra-star star-d">★</div><div class="extra-star star-e">✦</div>
-    <div class="unicorn-wrapper"><div class="rainbow-trail"><span class="rb1"></span><span class="rb2"></span><span class="rb3"></span><span class="rb4"></span><span class="rb5"></span><span class="rb6"></span></div><svg class="unicorn-svg" viewBox="0 0 40 28"><rect x="30" y="14" width="4" height="3" fill="#ff99cc"/><rect x="34" y="12" width="3" height="3" fill="#cc66ff"/><rect x="37" y="10" width="3" height="3" fill="#ff99cc"/><rect x="34" y="16" width="4" height="3" fill="#99ccff"/><rect x="38" y="15" width="2" height="3" fill="#ffcc66"/><rect x="24" y="18" width="4" height="6" fill="#f5eaf0"/><rect x="23" y="24" width="5" height="2" fill="#e0d0e8"/><rect x="18" y="18" width="4" height="6" fill="#f5eaf0"/><rect x="17" y="24" width="5" height="2" fill="#e0d0e8"/><rect x="10" y="10" width="22" height="12" fill="#fef0f8"/><rect x="12" y="16" width="18" height="5" fill="#f0e0f0"/><rect x="10" y="18" width="4" height="7" fill="#f5eaf0"/><rect x="9" y="24" width="5" height="2" fill="#e0d0e8"/><rect x="16" y="18" width="4" height="7" fill="#f5eaf0"/><rect x="15" y="24" width="5" height="2" fill="#e0d0e8"/><rect x="14" y="2" width="4" height="4" fill="#e8c8f0"/><rect x="10" y="4" width="12" height="4" fill="#d8b8e8"/><rect x="8" y="8" width="14" height="4" fill="#c8a8d8"/><rect x="6" y="10" width="6" height="3" fill="#d8b8e8"/><rect x="4" y="6" width="8" height="8" fill="#fef0f8"/><rect x="0" y="4" width="8" height="8" fill="#fef0f8"/><rect x="2" y="7" width="2" height="2" fill="#220044"/><rect x="2" y="7" width="1" height="1" fill="#ffffff" opacity="0.8"/><rect x="0" y="10" width="2" height="1" fill="#e8c8d8"/><rect x="2" y="0" width="3" height="4" fill="#ffd700"/><rect x="3" y="-3" width="2" height="3" fill="#ff9900"/><rect x="4" y="-5" width="1" height="2" fill="#ffcc00"/><rect x="4" y="4" width="2" height="3" fill="#ff6699"/><rect x="6" y="3" width="2" height="3" fill="#ff9933"/><rect x="8" y="3" width="2" height="3" fill="#ffee44"/><rect x="10" y="4" width="2" height="3" fill="#55cc55"/><rect x="12" y="5" width="2" height="3" fill="#55aaff"/></svg></div>
-    <div class="hero-left">
-      <div class="pixel-badge">✨ AI-POWERED POST-PRODUCTION ✨</div>
-      <h1>KAVISHKA S. SILVA<br><span class="accent-pixel">Video Editor & Motion Designer</span></h1>
-      <p class="hero-desc">5,000+ deliverables • 25M+ organic views • DTC ads, broadcast docs, AI motion. Pixel‑perfect editing with retro speed.</p>
-      <div class="stats-pixel">
-        <div class="stat"><div class="num" id="statDeliverables">0</div><div>Deliverables</div><div class="xp-bar"><div class="xp-fill" id="xpDeliverables" style="width: 0%"></div></div></div>
-        <div class="stat"><div class="num" id="statViews">0M+</div><div>Organic Views</div><div class="xp-bar"><div class="xp-fill" id="xpViews" style="width: 0%"></div></div></div>
-        <div class="stat"><div class="num" id="statLift">0%+</div><div>Avg Lift</div><div class="xp-bar"><div class="xp-fill" id="xpLift" style="width: 0%"></div></div></div>
-        <div class="stat"><div class="num" id="statYears">0+</div><div>Years Remote</div><div class="xp-bar"><div class="xp-fill" id="xpYears" style="width: 0%"></div></div></div>
-      </div>
-      <p style="font-size:0.7rem; color:#c0b8f0;">*based on client A/B tests of edited assets</p>
-    </div>
-    <div class="hero-right">
-      <div class="social-label">📡 FIND ME</div>
-      <div class="social-grid">
-        <a href="mailto:kavishkasugandika81@gmail.com" class="social-icon-btn s-email"><svg viewBox="0 0 24 24" fill="white"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
-        <a href="https://www.linkedin.com/in/kavishka-s-silva-84500a244/" target="_blank" class="social-icon-btn s-linkedin"><svg viewBox="0 0 24 24" fill="white"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.98 0H13v2.18C13.73 8.8 15.2 8 17 8c4.42 0 5 2.91 5 6.7V24h-5v-8.4c0-2-.04-4.57-2.79-4.57-2.79 0-3.22 2.18-3.22 4.43V24H8V8z"/></svg></a>
-        <a href="https://wa.me/393513709218" target="_blank" class="social-icon-btn s-whatsapp"><svg viewBox="0 0 24 24" fill="white"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.83L0 24l6.35-1.66A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.85 0-3.58-.5-5.07-1.37l-.36-.22-3.77.99 1-3.67-.24-.38A9.97 9.97 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg></a>
-        <a href="#" class="social-icon-btn s-instagram"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.247 2.242 1.31 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.247-3.608 1.31-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.247-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.247 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.635 2.014 1.977.672 3.318.194 5.16.108 7.015.014 8.295 0 8.705 0 12c0 3.295.014 3.705.072 4.985.086 1.855.564 3.697 1.906 5.038 1.341 1.342 3.183 1.82 5.038 1.906C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 1.855-.086 3.697-.564 5.038-1.906 1.342-1.341 1.82-3.183 1.906-5.038.058-1.28.072-1.69.072-4.985 0-3.295-.014-3.705-.072-4.985-.086-1.855-.564-3.697-1.906-5.038C21.645.635 19.803.157 17.948.072 16.668.014 16.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
-      </div>
-    </div>
-  </div>
+    <div class="dither"></div>
 
-  <!-- Clients Carousel -->
-  <div class="clients-section reveal">
-    <div class="clients-title">⭐ TRUSTED BY ⭐</div>
-    <div class="carousel-track">
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/k2GqjHTz/unnamed.jpg" alt="Business Basics"></div><div class="client-name">Business Basics<small>2M+ subs</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/YB19CZPJ/rewire-to-rise.jpg" alt="Rewire To Rise"></div><div class="client-name">Rewire To Rise<small>30K subs</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/qYZGJNTC/d83a98dceb3a3d4594be4c3b7ea6817452f353ef11d4b215aca8ebf0c4a9a8e4-SX1080-FMjpg.jpg" alt="Legacy Makers"></div><div class="client-name">Legacy Makers<small>Now @Prime Video</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/VpjJ1Xyz/images-1.png" alt="APPOLLONIA"></div><div class="client-name">APPOLLONIA<small>Luxury Jewelry</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/F4wBZMmf/672a2872be7ea0761c408c8c.jpg" alt="Sessionmilano"></div><div class="client-name">Sessionmilano<small>Luxury Clothing</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/hFrM9sLd/images.jpg" alt="il-labirinto"></div><div class="client-name">il-labirinto<small>Medicinal Plants</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/QFTHF1K3/Women-in-Power-Horizontal-Poster.jpg" alt="Women in Power"></div><div class="client-name">Women in Power<small>TV Series</small></div></div>
-      <div class="client-item"><div class="client-logo" style="background: radial-gradient(circle at 30% 30%, #f0a, #900); font-size:2.2rem; box-shadow: 0 0 0 4px #1b1738, 0 0 0 6px #f0a, 0 0 15px 0 #f0a; border: none;">✨</div><div class="client-name">And More!</div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/k2GqjHTz/unnamed.jpg" alt="Business Basics"></div><div class="client-name">Business Basics<small>2M+ subs</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/YB19CZPJ/rewire-to-rise.jpg" alt="Rewire To Rise"></div><div class="client-name">Rewire To Rise<small>30K subs</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/qYZGJNTC/d83a98dceb3a3d4594be4c3b7ea6817452f353ef11d4b215aca8ebf0c4a9a8e4-SX1080-FMjpg.jpg" alt="Legacy Makers"></div><div class="client-name">Legacy Makers<small>Now @Prime Video</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/VpjJ1Xyz/images-1.png" alt="APPOLLONIA"></div><div class="client-name">APPOLLONIA<small>Luxury Jewelry</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/F4wBZMmf/672a2872be7ea0761c408c8c.jpg" alt="Sessionmilano"></div><div class="client-name">Sessionmilano<small>Luxury Clothing</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/hFrM9sLd/images.jpg" alt="il-labirinto"></div><div class="client-name">il-labirinto<small>Medicinal Plants</small></div></div>
-      <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/QFTHF1K3/Women-in-Power-Horizontal-Poster.jpg" alt="Women in Power"></div><div class="client-name">Women in Power<small>TV Series</small></div></div>
-      <div class="client-item"><div class="client-logo" style="background: radial-gradient(circle at 30% 30%, #f0a, #900); font-size:2.2rem; box-shadow: 0 0 0 4px #1b1738, 0 0 0 6px #f0a, 0 0 15px 0 #f0a; border: none;">✨</div><div class="client-name">And More!</div></div>
-    </div>
-  </div>
+    <div class="pixel-container">
 
-  <!-- PERFORMANCE ADS -->
-  <div class="section-head reveal" id="perf"><div class="section-tag">🎯 DIRECT RESPONSE</div><h2>Performance Ads · UGC & Brand Campaigns</h2></div>
-  <div class="single-col-grid reveal"><div class="pixel-card-col"><h3>⚡ PERFORMANCE ADS</h3><p style="margin-bottom: 1rem;">Meta · TikTok · YouTube – retention hooks</p><div class="card-grid">
-      <div class="video-card" data-video="https://drive.google.com/file/d/1E6mpifJ3rVQPjk7qAeOYVMS-uE3G7shw/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png" alt="Apollonia" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Apollonia</div><div class="brand-desc">jewelry brand based in Rome</div></div></div>
-      <div class="video-card" data-video="https://drive.google.com/file/d/19E4tXRQjILx9bsqsE2E2BvqmUFjRnbzH/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/V0NnMKkC/Screenshot-2025-10-15-143253.png" alt="Spacegoods" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Spacegoods</div><div class="brand-desc">Coffee Brand</div></div></div>
-      <div class="video-card" data-video="https://drive.google.com/file/d/1OwSKlGW914YBiYtCZNb-QYm9gFVidkCM/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/v45d9WFZ/assetsads-hears-jpg.png" alt="Hears" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Hears</div><div class="brand-desc">World’s Most Innovative Earplugs</div></div></div>
-      <div class="video-card" data-video="https://drive.google.com/file/d/1sfls_UbXQlxGbFVifRXLPXLY_EgIIEVO/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/kVhp938Q/assetsmotion-panda-drum-jpg.png" alt="Panda Drum" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Panda Drum</div><div class="brand-desc">Best musical, relaxing instrument & educational gift for kids & adults</div></div></div>
-      <div class="video-card" data-video="https://drive.google.com/file/d/1oIahcK3zkUwKBfD3ycSJNVGQ5-EHMNke/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/1Yn4YPH9/assetsads-incogni-jpg.png" alt="Incogni" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Incogni</div><div class="brand-desc">World’s #1 pick for Data Removal</div></div></div>
-    </div></div></div>
-
-  <!-- AI-ENHANCED (softened) -->
-  <div class="section-head reveal" id="fullai"><div class="section-tag">🧠 AI-ENHANCED PRODUCTION</div><h2>AI-Assisted Creative Pipeline</h2><p style="margin-bottom: 1rem;">Kling 3.0 + Hera + ElevenLabs – broadcast quality, accelerated workflows, human‑guided refinement.</p></div>
-  <div class="card-grid reveal" style="margin-bottom: 2rem;">
-    <div class="video-card" data-video="https://drive.google.com/file/d/1KQCI8YrLpwE1o3dW0sdKGTSsOExZHUR0/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/Y4vFg589/Screenshot-2026-06-14-194015.png" alt="sessionmilano" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Sessionmilano</div><div class="brand-desc">Luxury clothing brand</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/19wM-wg0Eght7O0dOp-Ezi8GZZW3be6MW/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/0j99mxp2/Screenshot-2026-06-14-194247.png" alt="il-labirinto" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Il-labirinto</div><div class="brand-desc">Labirinto Officinale – grow, harvest, distill & package 20+ medicinal plants</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1E1HG8ep3KVbpfKW-AW-RKDWmARGMcQQR/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/Gvw1CFVr/Screenshot-2026-06-14-194353.png" alt="quivermarketing" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Quivermarketing</div><div class="brand-desc">Fashion e‑commerce brand</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1tQRkv7Le2KRWbK9brtlDQcw5Otn2MpNc/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/T3Z5vJB/Screenshot-2026-06-14-195156.png" alt="Cirillo Biliardi" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Cirillo Biliardi</div><div class="brand-desc">Luxury home accessories</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1bSYxhvweVs5riR6XY0InXfHOH4Nv9kO7/preview" data-wide="true"><div class="thumb"><img src="https://i.ibb.co/mC41Vg27/Screenshot-2026-04-18-233310.png" alt="AI Cinematic Showreel" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Future is today</div><div class="brand-desc">AI Cinematics</div></div></div>
-  </div>
-
-  <!-- DOCUMENTARIES -->
-  <div class="section-head reveal" id="docu" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
-    <div>
-      <div class="section-tag">🎬 PREMIUM OTT</div>
-      <h2 style="margin-bottom:0;">Documentary Series · Legacy Makers & Women in Power</h2>
-    </div>
-    <a href="https://www.legacymakerstv.com/home" target="_blank" class="episodes-btn-small">+50 EPISODES ↗</a>
-  </div>
-  <div style="position:relative; overflow:hidden; margin: 1.5rem 0;">
-    <div style="position:absolute; left:0; top:0; bottom:0; width:40px; background:linear-gradient(to right, #13103a, transparent); z-index:2; pointer-events:none;"></div>
-    <div style="position:absolute; right:0; top:0; bottom:0; width:40px; background:linear-gradient(to left, #13103a, transparent); z-index:2; pointer-events:none;"></div>
-    <div class="filmstrip-scroll" style="padding:0.5rem 0 1rem;">
-      <div class="filmstrip-track-rtl">
-        <div class="docu-card" data-video="https://drive.google.com/file/d/16gVSyqmBHITbf7zeHaGYd17cByE6xfqc/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/hJS97XWc/assetsdocu-carla-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Carla Üs</strong><div style="font-size:0.7rem; color:#7bc6ff;">Entrepreneur · Activist · Brazilian-American</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/1KxzI8_4fBYoB1IM93kLC-wHpGR731nyx/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/KxYknsVC/Screenshot-2025-10-16-171733.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Ashley Baity</strong><div style="font-size:0.7rem; color:#7bc6ff;">Army Veteran · Mompreneur · Toxic Freedom</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/1tiWptBrhnjpqW4OesfonNf1Yuff2Aum2/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/Dg59jk0F/Screenshot-2025-10-16-183108.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Celeste Sowder</strong><div style="font-size:0.7rem; color:#7bc6ff;">CEO · Founder · Soul Sister Project</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/1-1LVQlQ-JR6KOBNE7M4RwLvMm1_cXOZX/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/BVLhw56X/assetsdocu-kristal-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Kristal Stanley</strong><div style="font-size:0.7rem; color:#7bc6ff;">Artist · Faith · Art for His Glory</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/16gVSyqmBHITbf7zeHaGYd17cByE6xfqc/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/hJS97XWc/assetsdocu-carla-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Carla Üs</strong><div style="font-size:0.7rem; color:#7bc6ff;">Entrepreneur · Activist · Brazilian-American</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/1KxzI8_4fBYoB1IM93kLC-wHpGR731nyx/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/KxYknsVC/Screenshot-2025-10-16-171733.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Ashley Baity</strong><div style="font-size:0.7rem; color:#7bc6ff;">Army Veteran · Mompreneur · Toxic Freedom</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/1tiWptBrhnjpqW4OesfonNf1Yuff2Aum2/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/Dg59jk0F/Screenshot-2025-10-16-183108.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Celeste Sowder</strong><div style="font-size:0.7rem; color:#7bc6ff;">CEO · Founder · Soul Sister Project</div></div></div>
-        <div class="docu-card" data-video="https://drive.google.com/file/d/1-1LVQlQ-JR6KOBNE7M4RwLvMm1_cXOZX/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/BVLhw56X/assetsdocu-kristal-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Kristal Stanley</strong><div style="font-size:0.7rem; color:#7bc6ff;">Artist · Faith · Art for His Glory</div></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- YOUTUBE SECTION -->
-  <div class="section-head reveal" id="youtube"><div class="section-tag">▶ LONG-FORM YOUTUBE</div><h2>Business Basics · 2M+ subscribers</h2></div>
-  <div class="yt-pixel reveal" style="padding: 1.2rem 1.5rem;">
-    <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.2rem; flex-wrap:wrap;">
-      <img src="https://i.ibb.co/mCHdGs7n/unnamed.jpg" alt="Business Basics" style="width:52px; height:52px; border:3px solid #e9c46a; border-radius:50%; flex-shrink:0;">
-      <div>
-        <strong style="font-family:'Press Start 2P'; font-size:0.65rem; color:#ffefc0;">Business Basics</strong>
-        <div style="font-family:'VT323',monospace; font-size:1rem; color:#7bc6ff; margin-top:0.2rem;">2M+ subscribers</div>
-        <div style="font-family:'VT323',monospace; font-size:0.9rem; color:#c0b8f0;">Editor for 100+ documentary-style episodes. Retention hooks, pacing, cold‑open strategy.</div>
-      </div>
-      <a href="https://www.youtube.com/@BusinessBasicsYT" target="_blank" style="margin-left:auto; font-family:'Press Start 2P',monospace; font-size:0.42rem; background:#ff0000; color:#fff; padding:0.45rem 0.8rem; text-decoration:none; border:2px solid #cc0000; box-shadow:3px 3px 0 #000; white-space:nowrap; flex-shrink:0; animation:ytPulse 1.8s ease-in-out infinite;">▶ CHANNEL ↗</a>
-    </div>
-    <div style="position:relative;">
-      <div style="position:absolute; left:0; top:0; bottom:0; width:40px; background:linear-gradient(to right, #1a163a, transparent); z-index:2; pointer-events:none;"></div>
-      <div style="position:absolute; right:0; top:0; bottom:0; width:40px; background:linear-gradient(to left, #1a163a, transparent); z-index:2; pointer-events:none;"></div>
-      <div class="filmstrip-scroll">
-        <div class="filmstrip-track">
-          <a href="https://www.youtube.com/watch?v=uNKRplIFJmc" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/uNKRplIFJmc/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 01</div></a>
-          <a href="https://www.youtube.com/watch?v=6NVUsM5AUdY" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/6NVUsM5AUdY/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 02</div></a>
-          <a href="https://www.youtube.com/watch?v=cVPivlaMu58" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/cVPivlaMu58/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 03</div></a>
-          <a href="https://www.youtube.com/watch?v=ONgPh_hljjQ" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/ONgPh_hljjQ/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 04</div></a>
-          <a href="https://www.youtube.com/watch?v=uNKRplIFJmc" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/uNKRplIFJmc/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 01</div></a>
-          <a href="https://www.youtube.com/watch?v=6NVUsM5AUdY" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/6NVUsM5AUdY/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 02</div></a>
-          <a href="https://www.youtube.com/watch?v=cVPivlaMu58" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/cVPivlaMu58/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 03</div></a>
-          <a href="https://www.youtube.com/watch?v=ONgPh_hljjQ" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/ONgPh_hljjQ/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 04</div></a>
+        <!-- ─── NAV ─── -->
+        <div class="pixel-nav">
+            <div class="logo">K.S. SILVA</div>
+            <div class="nav-links">
+                <a href="#perf">PERF.</a>
+                <a href="#fullai">AI GEN</a>
+                <a href="#docu">DOCS</a>
+                <a href="#youtube">YT</a>
+            </div>
+            <a href="https://calendly.com/kavishkasugandika81/30min" target="_blank" class="btn-pixel">📼 HIRE ME</a>
         </div>
-      </div>
+
+        <!-- ─── HERO ─── -->
+        <div class="hero reveal" id="heroScene">
+            <div class="starfield"></div>
+            <div class="shooting-star star1"></div>
+            <div class="shooting-star star2"></div>
+            <div class="shooting-star star3"></div>
+            <div class="shooting-star star4"></div>
+
+            <div class="ufo-wrapper">
+                <div class="ufo">
+                    <svg viewBox="0 0 80 40">
+                        <rect x="8" y="16" width="64" height="8" fill="#7bc6ff"/>
+                        <rect x="4" y="18" width="72" height="6" fill="#5aadee"/>
+                        <rect x="12" y="14" width="56" height="4" fill="#aee3ff"/>
+                        <rect x="32" y="4" width="16" height="12" fill="#cceeff"/>
+                        <rect x="36" y="2" width="8" height="4" fill="#eef5ff"/>
+                        <rect x="12" y="22" width="6" height="3" fill="#ff4d4d"/>
+                        <rect x="26" y="22" width="6" height="3" fill="#ffaa44"/>
+                        <rect x="40" y="22" width="6" height="3" fill="#44ffaa"/>
+                        <rect x="54" y="22" width="6" height="3" fill="#ff66cc"/>
+                        <rect x="68" y="22" width="4" height="3" fill="#ff4d4d"/>
+                        <rect x="34" y="24" width="12" height="12" fill="#cceeff" opacity="0.5"/>
+                        <rect x="36" y="28" width="8" height="8" fill="#aee3ff" opacity="0.4"/>
+                    </svg>
+                    <div class="ufo-trail"></div>
+                </div>
+            </div>
+
+            <div class="pixel-cloud cloud1"></div>
+            <div class="pixel-cloud cloud2"></div>
+            <div class="pixel-cloud cloud3"></div>
+            <div class="pixel-moon" id="moon"></div>
+
+            <div class="pixel-mountains">
+                <svg viewBox="0 0 320 170" preserveAspectRatio="none">
+                    <polygon points="120,170 160,70 190,100 220,40 250,90 280,55 320,85 320,170" fill="#7e8e9f"/>
+                    <polygon points="160,70 175,95 145,95" fill="#ffffff"/>
+                    <polygon points="220,40 235,65 205,65" fill="#f0f0f5"/>
+                    <polygon points="280,55 295,80 265,80" fill="#ffffff"/>
+                    <polygon points="100,170 140,35 180,80 230,20 270,70 310,35 320,170" fill="#aec6df"/>
+                    <polygon points="140,35 160,70 120,70" fill="#ffffff"/>
+                    <polygon points="230,20 255,55 205,55" fill="#f5f5ff"/>
+                    <polygon points="310,35 320,60 295,60" fill="#ffffff"/>
+                    <circle cx="150" cy="55" r="2" fill="#fff"/>
+                    <circle cx="235" cy="42" r="2" fill="#fff"/>
+                    <circle cx="275" cy="68" r="1.5" fill="#fff"/>
+                    <circle cx="315" cy="48" r="1.5" fill="#fff"/>
+                </svg>
+            </div>
+
+            <div class="pixel-forest">
+                <svg viewBox="0 0 320 60" preserveAspectRatio="none">
+                    <g fill="#180f3a">
+                        <rect x="120" y="14" width="6" height="46"/>
+                        <rect x="118" y="10" width="2" height="4"/>
+                        <rect x="122" y="10" width="2" height="4"/>
+                        <rect x="126" y="10" width="2" height="4"/>
+                        <rect x="124" y="18" width="36" height="42"/>
+                        <rect x="124" y="10" width="2" height="8"/>
+                        <rect x="128" y="10" width="2" height="8"/>
+                        <rect x="132" y="10" width="2" height="8"/>
+                        <rect x="136" y="10" width="2" height="8"/>
+                        <rect x="148" y="10" width="2" height="8"/>
+                        <rect x="152" y="10" width="2" height="8"/>
+                        <rect x="156" y="10" width="2" height="8"/>
+                        <rect x="160" y="10" width="2" height="8"/>
+                        <rect x="158" y="14" width="6" height="46"/>
+                        <rect x="156" y="10" width="2" height="4"/>
+                        <rect x="160" y="10" width="2" height="4"/>
+                        <rect x="164" y="10" width="2" height="4"/>
+                        <rect x="138" y="2" width="8" height="20"/>
+                        <rect x="136" y="-4" width="2" height="6"/>
+                        <rect x="140" y="-4" width="2" height="6"/>
+                        <rect x="144" y="-4" width="2" height="6"/>
+                        <rect x="138" y="-8" width="2" height="6" fill="#e9c46a"/>
+                        <rect x="140" y="-8" width="2" height="6" fill="#ff6b9d"/>
+                        <rect x="158" y="-6" width="2" height="6" fill="#e9c46a"/>
+                        <rect x="160" y="-6" width="2" height="6" fill="#7bc6ff"/>
+                        <rect x="130" y="26" width="4" height="4" fill="#ffb84d"/>
+                        <rect x="142" y="26" width="4" height="4" fill="#ffb84d"/>
+                        <rect x="150" y="26" width="4" height="4" fill="#ffb84d"/>
+                        <rect x="141" y="8" width="4" height="6" fill="#ffb84d"/>
+                    </g>
+                    <g fill="#102a16">
+                        <rect x="6" y="46" width="4" height="14"/>
+                        <rect x="2" y="38" width="12" height="8"/>
+                        <rect x="4" y="30" width="8" height="8"/>
+                        <rect x="6" y="24" width="4" height="6"/>
+                        <rect x="40" y="44" width="4" height="16"/>
+                        <rect x="36" y="36" width="12" height="8"/>
+                        <rect x="38" y="28" width="8" height="8"/>
+                        <rect x="40" y="22" width="4" height="6"/>
+                        <rect x="200" y="46" width="4" height="14"/>
+                        <rect x="196" y="38" width="12" height="8"/>
+                        <rect x="198" y="28" width="8" height="8"/>
+                        <rect x="200" y="24" width="4" height="6"/>
+                        <rect x="240" y="44" width="4" height="16"/>
+                        <rect x="236" y="36" width="12" height="8"/>
+                        <rect x="238" y="28" width="8" height="8"/>
+                        <rect x="240" y="22" width="4" height="6"/>
+                        <rect x="282" y="46" width="4" height="14"/>
+                        <rect x="278" y="36" width="12" height="8"/>
+                        <rect x="280" y="28" width="8" height="8"/>
+                        <rect x="282" y="22" width="4" height="6"/>
+                    </g>
+                    <g fill="#061408">
+                        <rect x="-6" y="48" width="6" height="12"/>
+                        <rect x="-12" y="38" width="18" height="10"/>
+                        <rect x="-8" y="28" width="10" height="10"/>
+                        <rect x="-6" y="20" width="6" height="8"/>
+                        <rect x="22" y="50" width="6" height="10"/>
+                        <rect x="16" y="40" width="18" height="10"/>
+                        <rect x="20" y="30" width="10" height="10"/>
+                        <rect x="22" y="22" width="6" height="8"/>
+                        <rect x="60" y="48" width="6" height="12"/>
+                        <rect x="54" y="38" width="18" height="10"/>
+                        <rect x="58" y="28" width="10" height="10"/>
+                        <rect x="60" y="22" width="6" height="8"/>
+                        <rect x="180" y="50" width="6" height="10"/>
+                        <rect x="174" y="40" width="18" height="10"/>
+                        <rect x="178" y="28" width="10" height="10"/>
+                        <rect x="180" y="22" width="6" height="8"/>
+                        <rect x="222" y="48" width="6" height="12"/>
+                        <rect x="216" y="38" width="18" height="10"/>
+                        <rect x="220" y="28" width="10" height="10"/>
+                        <rect x="222" y="22" width="6" height="8"/>
+                        <rect x="262" y="50" width="6" height="10"/>
+                        <rect x="256" y="38" width="18" height="10"/>
+                        <rect x="260" y="28" width="10" height="10"/>
+                        <rect x="262" y="22" width="6" height="8"/>
+                        <rect x="300" y="48" width="6" height="12"/>
+                        <rect x="294" y="38" width="18" height="10"/>
+                        <rect x="298" y="28" width="10" height="10"/>
+                        <rect x="300" y="22" width="6" height="8"/>
+                    </g>
+                    <rect x="0" y="58" width="320" height="2" fill="#03080a"/>
+                </svg>
+            </div>
+
+            <!-- ─── DRAGON + FIRE BREATH ─── -->
+            <div class="dragon-wrapper" id="dragonWrapper">
+                <svg class="pixel-dragon" viewBox="-90 0 270 70" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+                    <!-- ── FIRE BREATH ── -->
+                    <g class="fire-group" id="fireGroup">
+                        <!-- Main flame stream -->
+                        <path class="flame flame-1" d="M2,22 Q-10,10 -22,18 Q-34,12 -48,20 Q-40,26 -34,22 Q-28,30 -20,26 Q-12,32 -4,26 Q0,30 2,22Z" fill="#ff4500" stroke="#cc3300" stroke-width="0.5" opacity="0.95"/>
+                        <path class="flame flame-2" d="M0,20 Q-14,8 -28,14 Q-40,8 -52,16 Q-44,22 -36,18 Q-30,26 -22,22 Q-14,28 -6,22 Q-2,26 0,20Z" fill="#ff6a00" stroke="#cc5500" stroke-width="0.5" opacity="0.9"/>
+                        <path class="flame flame-3" d="M-2,18 Q-18,6 -32,12 Q-44,6 -56,14 Q-48,20 -40,16 Q-34,24 -26,20 Q-18,26 -10,20 Q-6,24 -2,18Z" fill="#ff9900" stroke="#e67300" stroke-width="0.5" opacity="0.85"/>
+                        <path class="flame flame-4" d="M-4,16 Q-22,4 -36,10 Q-48,4 -60,12 Q-52,18 -44,14 Q-38,22 -30,18 Q-22,24 -14,18 Q-10,22 -4,16Z" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5" opacity="0.8"/>
+                        <path class="flame flame-5" d="M-6,14 Q-26,2 -40,8 Q-52,2 -64,10 Q-56,16 -48,12 Q-42,20 -34,16 Q-26,22 -18,16 Q-14,20 -6,14Z" fill="#ffee44" stroke="#ccbb00" stroke-width="0.5" opacity="0.7"/>
+
+                        <!-- Embers / sparks -->
+                        <circle class="ember ember-1" cx="-10" cy="14" r="1.5" fill="#ffcc44" opacity="0.9"/>
+                        <circle class="ember ember-2" cx="-22" cy="10" r="1" fill="#ff8800" opacity="0.8"/>
+                        <circle class="ember ember-3" cx="-34" cy="8" r="1.2" fill="#ffaa22" opacity="0.85"/>
+                        <circle class="ember ember-4" cx="-46" cy="6" r="1" fill="#ff6600" opacity="0.7"/>
+                        <circle class="ember ember-5" cx="-56" cy="10" r="1.3" fill="#ffbb33" opacity="0.75"/>
+                        <circle class="ember ember-1" cx="-14" cy="18" r="0.8" fill="#ffdd55" opacity="0.8" style="animation-delay:0.15s;"/>
+                        <circle class="ember ember-2" cx="-28" cy="14" r="1" fill="#ff9933" opacity="0.7" style="animation-delay:0.35s;"/>
+                        <circle class="ember ember-3" cx="-40" cy="12" r="0.9" fill="#ffbb44" opacity="0.75" style="animation-delay:0.55s;"/>
+                        <circle class="ember ember-4" cx="-52" cy="8" r="1.1" fill="#ff7733" opacity="0.65" style="animation-delay:0.25s;"/>
+                        <circle class="ember ember-5" cx="-62" cy="14" r="0.7" fill="#ffcc55" opacity="0.7" style="animation-delay:0.45s;"/>
+
+                        <!-- Glow at mouth -->
+                        <ellipse cx="4" cy="18" rx="8" ry="6" fill="#ff6600" opacity="0.5">
+                            <animate attributeName="opacity" values="0.3;0.7;0.3" dur="0.3s" repeatCount="indefinite"/>
+                        </ellipse>
+                        <ellipse cx="2" cy="17" rx="5" ry="4" fill="#ffcc00" opacity="0.4">
+                            <animate attributeName="opacity" values="0.2;0.6;0.2" dur="0.25s" repeatCount="indefinite"/>
+                        </ellipse>
+                    </g>
+
+                    <!-- ── DRAGON BODY ── -->
+                    <rect x="18" y="14" width="6" height="26" fill="#2ecc71"/>
+                    <rect x="18" y="14" width="6" height="4" fill="#58e68a"/>
+                    <rect x="14" y="20" width="4" height="14" fill="#27ae60"/>
+                    <rect x="22" y="18" width="4" height="12" fill="#2ecc71"/>
+
+                    <!-- Head -->
+                    <rect x="10" y="8" width="14" height="12" fill="#2ecc71"/>
+                    <rect x="10" y="8" width="14" height="3" fill="#58e68a"/>
+                    <rect x="14" y="12" width="5" height="4" fill="#1a2e1a"/>
+                    <rect x="15" y="13" width="2" height="2" fill="#f5e030"/>
+                    <rect x="16" y="13" width="1" height="1" fill="#ffffff"/>
+                    <rect x="10" y="14" width="2" height="2" fill="#1e5a2e"/>
+
+                    <!-- Horns -->
+                    <rect x="12" y="2" width="3" height="6" fill="#f1c40f"/>
+                    <rect x="16" y="0" width="3" height="5" fill="#f1c40f"/>
+                    <rect x="8" y="4" width="3" height="5" fill="#f39c12"/>
+                    <rect x="6" y="6" width="2" height="4" fill="#e67e22"/>
+
+                    <!-- Spikes on back -->
+                    <rect x="24" y="10" width="2" height="6" fill="#f1c40f"/>
+                    <rect x="28" y="8" width="2" height="8" fill="#f39c12"/>
+                    <rect x="32" y="10" width="2" height="6" fill="#f1c40f"/>
+                    <rect x="36" y="12" width="2" height="4" fill="#f39c12"/>
+                    <rect x="40" y="14" width="2" height="4" fill="#f1c40f"/>
+
+                    <!-- Body main -->
+                    <rect x="24" y="24" width="22" height="14" fill="#2ecc71"/>
+                    <rect x="24" y="24" width="22" height="3" fill="#58e68a"/>
+                    <rect x="26" y="30" width="18" height="3" fill="#27ae60"/>
+                    <rect x="28" y="33" width="14" height="3" fill="#1e8449"/>
+                    <rect x="46" y="28" width="8" height="6" fill="#2ecc71"/>
+                    <rect x="54" y="30" width="6" height="5" fill="#27ae60"/>
+                    <rect x="60" y="32" width="6" height="4" fill="#2ecc71"/>
+                    <rect x="66" y="34" width="5" height="4" fill="#27ae60"/>
+                    <rect x="71" y="36" width="4" height="3" fill="#1e8449"/>
+                    <rect x="75" y="38" width="3" height="3" fill="#2ecc71"/>
+                    <rect x="78" y="36" width="3" height="4" fill="#f1c40f"/>
+                    <rect x="81" y="34" width="2" height="3" fill="#f39c12"/>
+
+                    <!-- Tail spikes -->
+                    <rect x="75" y="30" width="2" height="6" fill="#f1c40f"/>
+                    <rect x="80" y="28" width="2" height="8" fill="#f39c12"/>
+                    <rect x="85" y="32" width="2" height="4" fill="#f1c40f"/>
+
+                    <!-- Legs -->
+                    <rect x="22" y="38" width="4" height="8" fill="#27ae60"/>
+                    <rect x="28" y="38" width="4" height="8" fill="#2ecc71"/>
+                    <rect x="34" y="38" width="4" height="8" fill="#27ae60"/>
+                    <rect x="40" y="38" width="4" height="8" fill="#2ecc71"/>
+                    <rect x="22" y="46" width="4" height="2" fill="#1e8449"/>
+                    <rect x="28" y="46" width="4" height="2" fill="#1e8449"/>
+                    <rect x="34" y="46" width="4" height="2" fill="#1e8449"/>
+                    <rect x="40" y="46" width="4" height="2" fill="#1e8449"/>
+
+                    <!-- Wings -->
+                    <g class="wing">
+                        <rect x="30" y="8" width="8" height="6" fill="#27ae60"/>
+                        <rect x="38" y="4" width="12" height="8" fill="#2ecc71"/>
+                        <rect x="50" y="2" width="10" height="12" fill="#1e8449"/>
+                        <rect x="36" y="10" width="26" height="14" fill="#27ae60"/>
+                        <rect x="40" y="16" width="22" height="8" fill="#2ecc71"/>
+                        <rect x="30" y="8" width="18" height="2" fill="#58e68a"/>
+                        <rect x="50" y="4" width="8" height="2" fill="#58e68a"/>
+                        <rect x="44" y="6" width="2" height="18" fill="#1e8449" opacity="0.7"/>
+                        <rect x="52" y="8" width="2" height="14" fill="#1e8449" opacity="0.7"/>
+                        <rect x="60" y="10" width="2" height="10" fill="#1e8449" opacity="0.6"/>
+                        <rect x="48" y="2" width="4" height="4" fill="#f1c40f"/>
+                        <rect x="54" y="0" width="4" height="3" fill="#f39c12"/>
+                        <rect x="62" y="0" width="3" height="3" fill="#f1c40f"/>
+                    </g>
+                    <g class="wing">
+                        <rect x="32" y="28" width="26" height="12" fill="#1e8449" opacity="0.85"/>
+                        <rect x="36" y="32" width="22" height="10" fill="#27ae60" opacity="0.9"/>
+                        <rect x="48" y="36" width="12" height="8" fill="#1e8449"/>
+                        <rect x="56" y="38" width="8" height="6" fill="#2ecc71"/>
+                        <rect x="52" y="32" width="2" height="10" fill="#145a32" opacity="0.6"/>
+                        <rect x="60" y="34" width="2" height="8" fill="#145a32" opacity="0.5"/>
+                    </g>
+
+                    <rect x="28" y="36" width="6" height="5" fill="#27ae60"/>
+                    <rect x="26" y="40" width="4" height="3" fill="#1e8449"/>
+                    <rect x="30" y="41" width="2" height="3" fill="#f1c40f"/>
+                    <rect x="38" y="36" width="6" height="5" fill="#27ae60"/>
+                    <rect x="36" y="40" width="4" height="3" fill="#1e8449"/>
+                    <rect x="40" y="41" width="2" height="3" fill="#f1c40f"/>
+                    <rect x="28" y="22" width="3" height="4" fill="#f1c40f"/>
+                    <rect x="34" y="20" width="3" height="5" fill="#f39c12"/>
+                    <rect x="40" y="21" width="3" height="4" fill="#f1c40f"/>
+                    <rect x="46" y="23" width="3" height="4" fill="#f39c12"/>
+
+                    <!-- Eye glow -->
+                    <rect x="14" y="12" width="1" height="1" fill="#7bc6ff" opacity="0.8"/>
+                    <rect x="15" y="12" width="1" height="1" fill="#aee3ff" opacity="0.6"/>
+                </svg>
+            </div>
+
+            <div class="extra-star star-a">★</div>
+            <div class="extra-star star-b">✦</div>
+            <div class="extra-star star-c">✧</div>
+            <div class="extra-star star-d">★</div>
+            <div class="extra-star star-e">✦</div>
+
+            <div class="unicorn-wrapper">
+                <div class="rainbow-trail"><span class="rb1"></span><span class="rb2"></span><span class="rb3"></span><span class="rb4"></span><span class="rb5"></span><span class="rb6"></span></div>
+                <svg class="unicorn-svg" viewBox="0 0 40 28">
+                    <rect x="30" y="14" width="4" height="3" fill="#ff99cc"/>
+                    <rect x="34" y="12" width="3" height="3" fill="#cc66ff"/>
+                    <rect x="37" y="10" width="3" height="3" fill="#ff99cc"/>
+                    <rect x="34" y="16" width="4" height="3" fill="#99ccff"/>
+                    <rect x="38" y="15" width="2" height="3" fill="#ffcc66"/>
+                    <rect x="24" y="18" width="4" height="6" fill="#f5eaf0"/>
+                    <rect x="23" y="24" width="5" height="2" fill="#e0d0e8"/>
+                    <rect x="18" y="18" width="4" height="6" fill="#f5eaf0"/>
+                    <rect x="17" y="24" width="5" height="2" fill="#e0d0e8"/>
+                    <rect x="10" y="10" width="22" height="12" fill="#fef0f8"/>
+                    <rect x="12" y="16" width="18" height="5" fill="#f0e0f0"/>
+                    <rect x="10" y="18" width="4" height="7" fill="#f5eaf0"/>
+                    <rect x="9" y="24" width="5" height="2" fill="#e0d0e8"/>
+                    <rect x="16" y="18" width="4" height="7" fill="#f5eaf0"/>
+                    <rect x="15" y="24" width="5" height="2" fill="#e0d0e8"/>
+                    <rect x="14" y="2" width="4" height="4" fill="#e8c8f0"/>
+                    <rect x="10" y="4" width="12" height="4" fill="#d8b8e8"/>
+                    <rect x="8" y="8" width="14" height="4" fill="#c8a8d8"/>
+                    <rect x="6" y="10" width="6" height="3" fill="#d8b8e8"/>
+                    <rect x="4" y="6" width="8" height="8" fill="#fef0f8"/>
+                    <rect x="0" y="4" width="8" height="8" fill="#fef0f8"/>
+                    <rect x="2" y="7" width="2" height="2" fill="#220044"/>
+                    <rect x="2" y="7" width="1" height="1" fill="#ffffff" opacity="0.8"/>
+                    <rect x="0" y="10" width="2" height="1" fill="#e8c8d8"/>
+                    <rect x="2" y="0" width="3" height="4" fill="#ffd700"/>
+                    <rect x="3" y="-3" width="2" height="3" fill="#ff9900"/>
+                    <rect x="4" y="-5" width="1" height="2" fill="#ffcc00"/>
+                    <rect x="4" y="4" width="2" height="3" fill="#ff6699"/>
+                    <rect x="6" y="3" width="2" height="3" fill="#ff9933"/>
+                    <rect x="8" y="3" width="2" height="3" fill="#ffee44"/>
+                    <rect x="10" y="4" width="2" height="3" fill="#55cc55"/>
+                    <rect x="12" y="5" width="2" height="3" fill="#55aaff"/>
+                </svg>
+            </div>
+
+            <div class="hero-left">
+                <div class="pixel-badge">✨ AI-POWERED POST-PRODUCTION ✨</div>
+                <h1>KAVISHKA S. SILVA<br><span class="accent-pixel">Video Editor & Motion Designer</span></h1>
+                <p class="hero-desc">5,000+ deliverables • 25M+ organic views • DTC ads, broadcast docs, AI motion. Pixel‑perfect editing with retro speed.</p>
+                <div class="stats-pixel">
+                    <div class="stat"><div class="num" id="statDeliverables">0</div><div>Deliverables</div><div class="xp-bar"><div class="xp-fill" id="xpDeliverables" style="width:0%"></div></div></div>
+                    <div class="stat"><div class="num" id="statViews">0M+</div><div>Organic Views</div><div class="xp-bar"><div class="xp-fill" id="xpViews" style="width:0%"></div></div></div>
+                    <div class="stat"><div class="num" id="statLift">0%+</div><div>Avg Lift</div><div class="xp-bar"><div class="xp-fill" id="xpLift" style="width:0%"></div></div></div>
+                    <div class="stat"><div class="num" id="statYears">0+</div><div>Years Remote</div><div class="xp-bar"><div class="xp-fill" id="xpYears" style="width:0%"></div></div></div>
+                </div>
+                <p style="font-size:0.75rem; color:#c0b8f0; font-family:'Courier New', Courier, monospace; letter-spacing:0.01em;">*based on client A/B tests of edited assets</p>
+            </div>
+
+            <div class="hero-right">
+                <div class="social-label">📡 FIND ME</div>
+                <div class="social-grid">
+                    <a href="mailto:kavishkasugandika81@gmail.com" class="social-icon-btn s-email"><svg viewBox="0 0 24 24" fill="white"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/kavishka-s-silva-84500a244/" target="_blank" class="social-icon-btn s-linkedin"><svg viewBox="0 0 24 24" fill="white"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.98 0H13v2.18C13.73 8.8 15.2 8 17 8c4.42 0 5 2.91 5 6.7V24h-5v-8.4c0-2-.04-4.57-2.79-4.57-2.79 0-3.22 2.18-3.22 4.43V24H8V8z"/></svg></a>
+                    <a href="https://wa.me/393513709218" target="_blank" class="social-icon-btn s-whatsapp"><svg viewBox="0 0 24 24" fill="white"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.83L0 24l6.35-1.66A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.85 0-3.58-.5-5.07-1.37l-.36-.22-3.77.99 1-3.67-.24-.38A9.97 9.97 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg></a>
+                    <a href="#" class="social-icon-btn s-instagram"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.247 2.242 1.31 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.31 3.608-.975.975-2.242 1.247-3.608 1.31-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.31-.975-.975-1.247-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.31-3.608.975-.975 2.242-1.247 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.635 2.014 1.977.672 3.318.194 5.16.108 7.015.014 8.295 0 8.705 0 12c0 3.295.014 3.705.072 4.985.086 1.855.564 3.697 1.906 5.038 1.341 1.342 3.183 1.82 5.038 1.906C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 1.855-.086 3.697-.564 5.038-1.906 1.342-1.341 1.82-3.183 1.906-5.038.058-1.28.072-1.69.072-4.985 0-3.295-.014-3.705-.072-4.985-.086-1.855-.564-3.697-1.906-5.038C21.645.635 19.803.157 17.948.072 16.668.014 16.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── CLIENTS CAROUSEL ─── -->
+        <div class="clients-section reveal">
+            <div class="clients-title">⭐ TRUSTED BY ⭐</div>
+            <div class="carousel-track">
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/k2GqjHTz/unnamed.jpg" alt="Business Basics"></div><div class="client-name">Business Basics<small>2M+ subs</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/YB19CZPJ/rewire-to-rise.jpg" alt="Rewire To Rise"></div><div class="client-name">Rewire To Rise<small>30K subs</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/qYZGJNTC/d83a98dceb3a3d4594be4c3b7ea6817452f353ef11d4b215aca8ebf0c4a9a8e4-SX1080-FMjpg.jpg" alt="Legacy Makers"></div><div class="client-name">Legacy Makers<small>Now @Prime Video</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/VpjJ1Xyz/images-1.png" alt="APPOLLONIA"></div><div class="client-name">APPOLLONIA<small>Luxury Jewelry</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/F4wBZMmf/672a2872be7ea0761c408c8c.jpg" alt="Sessionmilano"></div><div class="client-name">Sessionmilano<small>Luxury Clothing</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/hFrM9sLd/images.jpg" alt="il-labirinto"></div><div class="client-name">il-labirinto<small>Medicinal Plants</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/QFTHF1K3/Women-in-Power-Horizontal-Poster.jpg" alt="Women in Power"></div><div class="client-name">Women in Power<small>TV Series</small></div></div>
+                <div class="client-item"><div class="client-logo" style="background:radial-gradient(circle at 30% 30%, #f0a, #900); font-size:2.2rem; box-shadow:0 0 0 4px #1b1738, 0 0 0 6px #f0a, 0 0 15px 0 #f0a; border:none;">✨</div><div class="client-name">And More!</div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/k2GqjHTz/unnamed.jpg" alt="Business Basics"></div><div class="client-name">Business Basics<small>2M+ subs</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/YB19CZPJ/rewire-to-rise.jpg" alt="Rewire To Rise"></div><div class="client-name">Rewire To Rise<small>30K subs</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/qYZGJNTC/d83a98dceb3a3d4594be4c3b7ea6817452f353ef11d4b215aca8ebf0c4a9a8e4-SX1080-FMjpg.jpg" alt="Legacy Makers"></div><div class="client-name">Legacy Makers<small>Now @Prime Video</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/VpjJ1Xyz/images-1.png" alt="APPOLLONIA"></div><div class="client-name">APPOLLONIA<small>Luxury Jewelry</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/F4wBZMmf/672a2872be7ea0761c408c8c.jpg" alt="Sessionmilano"></div><div class="client-name">Sessionmilano<small>Luxury Clothing</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/hFrM9sLd/images.jpg" alt="il-labirinto"></div><div class="client-name">il-labirinto<small>Medicinal Plants</small></div></div>
+                <div class="client-item"><div class="client-logo"><img src="https://i.ibb.co/QFTHF1K3/Women-in-Power-Horizontal-Poster.jpg" alt="Women in Power"></div><div class="client-name">Women in Power<small>TV Series</small></div></div>
+                <div class="client-item"><div class="client-logo" style="background:radial-gradient(circle at 30% 30%, #f0a, #900); font-size:2.2rem; box-shadow:0 0 0 4px #1b1738, 0 0 0 6px #f0a, 0 0 15px 0 #f0a; border:none;">✨</div><div class="client-name">And More!</div></div>
+            </div>
+        </div>
+
+        <!-- ─── PERFORMANCE ADS ─── -->
+        <div class="section-head reveal" id="perf"><div class="section-tag">🎯 DIRECT RESPONSE</div><h2>Performance Ads · UGC & Brand Campaigns</h2></div>
+        <div class="single-col-grid reveal"><div class="pixel-card-col"><h3>⚡ PERFORMANCE ADS</h3><p style="margin-bottom:1rem;">Meta · TikTok · YouTube – retention hooks</p><div class="card-grid">
+                    <div class="video-card" data-video="https://drive.google.com/file/d/1E6mpifJ3rVQPjk7qAeOYVMS-uE3G7shw/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/cSK3Jz7w/Screenshot-2026-06-14-135000.png" alt="Apollonia" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Apollonia</div><div class="brand-desc">jewelry brand based in Rome</div></div></div>
+                    <div class="video-card" data-video="https://drive.google.com/file/d/19E4tXRQjILx9bsqsE2E2BvqmUFjRnbzH/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/V0NnMKkC/Screenshot-2025-10-15-143253.png" alt="Spacegoods" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Spacegoods</div><div class="brand-desc">Coffee Brand</div></div></div>
+                    <div class="video-card" data-video="https://drive.google.com/file/d/1OwSKlGW914YBiYtCZNb-QYm9gFVidkCM/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/v45d9WFZ/assetsads-hears-jpg.png" alt="Hears" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Hears</div><div class="brand-desc">World’s Most Innovative Earplugs</div></div></div>
+                    <div class="video-card" data-video="https://drive.google.com/file/d/1sfls_UbXQlxGbFVifRXLPXLY_EgIIEVO/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/kVhp938Q/assetsmotion-panda-drum-jpg.png" alt="Panda Drum" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Panda Drum</div><div class="brand-desc">Best musical, relaxing instrument & educational gift for kids & adults</div></div></div>
+                    <div class="video-card" data-video="https://drive.google.com/file/d/1oIahcK3zkUwKBfD3ycSJNVGQ5-EHMNke/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/1Yn4YPH9/assetsads-incogni-jpg.png" alt="Incogni" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Incogni</div><div class="brand-desc">World’s #1 pick for Data Removal</div></div></div>
+                </div></div></div>
+
+        <!-- ─── AI-ENHANCED ─── -->
+        <div class="section-head reveal" id="fullai"><div class="section-tag">🧠 AI-ENHANCED PRODUCTION</div><h2>AI-Assisted Creative Pipeline</h2><p style="margin-bottom:1rem;">Kling 3.0 + Hera + ElevenLabs – broadcast quality, accelerated workflows, human‑guided refinement.</p></div>
+        <div class="card-grid reveal" style="margin-bottom:2rem;">
+            <div class="video-card" data-video="https://drive.google.com/file/d/1KQCI8YrLpwE1o3dW0sdKGTSsOExZHUR0/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/Y4vFg589/Screenshot-2026-06-14-194015.png" alt="sessionmilano" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Sessionmilano</div><div class="brand-desc">Luxury clothing brand</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/19wM-wg0Eght7O0dOp-Ezi8GZZW3be6MW/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/0j99mxp2/Screenshot-2026-06-14-194247.png" alt="il-labirinto" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Il-labirinto</div><div class="brand-desc">Labirinto Officinale – grow, harvest, distill & package 20+ medicinal plants</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1E1HG8ep3KVbpfKW-AW-RKDWmARGMcQQR/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/Gvw1CFVr/Screenshot-2026-06-14-194353.png" alt="quivermarketing" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Quivermarketing</div><div class="brand-desc">Fashion e‑commerce brand</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1tQRkv7Le2KRWbK9brtlDQcw5Otn2MpNc/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/T3Z5vJB/Screenshot-2026-06-14-195156.png" alt="Cirillo Biliardi" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Cirillo Biliardi</div><div class="brand-desc">Luxury home accessories</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1bSYxhvweVs5riR6XY0InXfHOH4Nv9kO7/preview" data-wide="true"><div class="thumb"><img src="https://i.ibb.co/mC41Vg27/Screenshot-2026-04-18-233310.png" alt="AI Cinematic Showreel" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Future is today</div><div class="brand-desc">AI Cinematics</div></div></div>
+        </div>
+
+        <!-- ─── DOCUMENTARIES ─── -->
+        <div class="section-head reveal" id="docu" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+            <div>
+                <div class="section-tag">🎬 PREMIUM OTT</div>
+                <h2 style="margin-bottom:0;">Documentary Series · Legacy Makers & Women in Power</h2>
+            </div>
+            <a href="https://www.legacymakerstv.com/home" target="_blank" class="episodes-btn-small">+50 EPISODES ↗</a>
+        </div>
+        <div style="position:relative; overflow:hidden; margin:1.5rem 0;">
+            <div style="position:absolute; left:0; top:0; bottom:0; width:40px; background:linear-gradient(to right, #13103a, transparent); z-index:2; pointer-events:none;"></div>
+            <div style="position:absolute; right:0; top:0; bottom:0; width:40px; background:linear-gradient(to left, #13103a, transparent); z-index:2; pointer-events:none;"></div>
+            <div class="filmstrip-scroll" style="padding:0.5rem 0 1rem;">
+                <div class="filmstrip-track-rtl">
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/16gVSyqmBHITbf7zeHaGYd17cByE6xfqc/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/hJS97XWc/assetsdocu-carla-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Carla Üs</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">Entrepreneur · Activist · Brazilian-American</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/1KxzI8_4fBYoB1IM93kLC-wHpGR731nyx/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/KxYknsVC/Screenshot-2025-10-16-171733.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Ashley Baity</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">Army Veteran · Mompreneur · Toxic Freedom</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/1tiWptBrhnjpqW4OesfonNf1Yuff2Aum2/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/Dg59jk0F/Screenshot-2025-10-16-183108.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Celeste Sowder</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">CEO · Founder · Soul Sister Project</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/1-1LVQlQ-JR6KOBNE7M4RwLvMm1_cXOZX/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/BVLhw56X/assetsdocu-kristal-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Kristal Stanley</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">Artist · Faith · Art for His Glory</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/16gVSyqmBHITbf7zeHaGYd17cByE6xfqc/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/hJS97XWc/assetsdocu-carla-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Carla Üs</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">Entrepreneur · Activist · Brazilian-American</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/1KxzI8_4fBYoB1IM93kLC-wHpGR731nyx/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/KxYknsVC/Screenshot-2025-10-16-171733.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Ashley Baity</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">Army Veteran · Mompreneur · Toxic Freedom</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/1tiWptBrhnjpqW4OesfonNf1Yuff2Aum2/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/Dg59jk0F/Screenshot-2025-10-16-183108.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Celeste Sowder</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">CEO · Founder · Soul Sister Project</div></div></div>
+                    <div class="docu-card" data-video="https://drive.google.com/file/d/1-1LVQlQ-JR6KOBNE7M4RwLvMm1_cXOZX/preview" data-wide="false"><div class="docu-thumb"><img src="https://i.ibb.co/BVLhw56X/assetsdocu-kristal-jpg.png" loading="lazy"></div><div style="padding:0.6rem;"><strong>Kristal Stanley</strong><div style="font-size:1rem; color:#7bc6ff; font-family:'VT323', monospace;">Artist · Faith · Art for His Glory</div></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── YOUTUBE ─── -->
+        <div class="section-head reveal" id="youtube"><div class="section-tag">▶ LONG-FORM YOUTUBE</div><h2>Business Basics · 2M+ subscribers</h2></div>
+        <div class="yt-pixel reveal" style="padding:1.2rem 1.5rem;">
+            <div style="display:flex; align-items:center; gap:1rem; margin-bottom:1.2rem; flex-wrap:wrap;">
+                <img src="https://i.ibb.co/mCHdGs7n/unnamed.jpg" alt="Business Basics" style="width:52px; height:52px; border:3px solid #e9c46a; border-radius:50%; flex-shrink:0;">
+                <div>
+                    <strong style="font-family:'Press Start 2P'; font-size:0.65rem; color:#ffefc0;">Business Basics</strong>
+                    <div style="font-family:'VT323',monospace; font-size:1rem; color:#7bc6ff; margin-top:0.2rem;">2M+ subscribers</div>
+                    <div style="font-family:'VT323',monospace; font-size:0.9rem; color:#c0b8f0;">Editor for 100+ documentary-style episodes. Retention hooks, pacing, cold‑open strategy.</div>
+                </div>
+                <a href="https://www.youtube.com/@BusinessBasicsYT" target="_blank" style="margin-left:auto; font-family:'Press Start 2P',monospace; font-size:0.42rem; background:#ff0000; color:#fff; padding:0.45rem 0.8rem; text-decoration:none; border:2px solid #cc0000; box-shadow:3px 3px 0 #000; white-space:nowrap; flex-shrink:0; animation:ytPulse 1.8s ease-in-out infinite;">▶ CHANNEL ↗</a>
+            </div>
+            <div style="position:relative;">
+                <div style="position:absolute; left:0; top:0; bottom:0; width:40px; background:linear-gradient(to right, #1a163a, transparent); z-index:2; pointer-events:none;"></div>
+                <div style="position:absolute; right:0; top:0; bottom:0; width:40px; background:linear-gradient(to left, #1a163a, transparent); z-index:2; pointer-events:none;"></div>
+                <div class="filmstrip-scroll">
+                    <div class="filmstrip-track">
+                        <a href="https://www.youtube.com/watch?v=uNKRplIFJmc" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/uNKRplIFJmc/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 01</div></a>
+                        <a href="https://www.youtube.com/watch?v=6NVUsM5AUdY" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/6NVUsM5AUdY/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 02</div></a>
+                        <a href="https://www.youtube.com/watch?v=cVPivlaMu58" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/cVPivlaMu58/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 03</div></a>
+                        <a href="https://www.youtube.com/watch?v=ONgPh_hljjQ" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/ONgPh_hljjQ/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 04</div></a>
+                        <a href="https://www.youtube.com/watch?v=uNKRplIFJmc" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/uNKRplIFJmc/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 01</div></a>
+                        <a href="https://www.youtube.com/watch?v=6NVUsM5AUdY" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/6NVUsM5AUdY/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 02</div></a>
+                        <a href="https://www.youtube.com/watch?v=cVPivlaMu58" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/cVPivlaMu58/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 03</div></a>
+                        <a href="https://www.youtube.com/watch?v=ONgPh_hljjQ" target="_blank" class="filmstrip-card"><div class="filmstrip-thumb"><img src="https://i.ytimg.com/vi/ONgPh_hljjQ/hqdefault.jpg" loading="lazy"><div class="yt-play-overlay">▶</div></div><div class="filmstrip-label">EP 04</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── SHORT-FORM ─── -->
+        <div class="section-head reveal"><div class="section-tag">📱 SHORT-FORM</div><h2>Reels & YouTube Shorts</h2></div>
+        <div class="card-grid reveal" style="margin-bottom:2rem;">
+            <div class="video-card" data-video="https://drive.google.com/file/d/1ZtHvD8v1vrJp_Qvt68qL0XJ1Zt6gyvKa/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/k61P7jVc/assetsreels-schoeff-jpg.png" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Dr. Jonathan Schoeff</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1vdVsCMJvPZPWYFp8Q-jM1TVGAdMhfOna/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/gLTjBwH2/Screenshot-2025-10-15-232606.png" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Apple China Investment</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1h77WGmgQ-NwbPl1384ojsqW_fuzfQnC0/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/7dDpsNHW/assetsreels-business-shorts-jpg.png" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Business Basics Repurposed</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1Ppq-NWzK76RatHZyUGEdFy6rPOqnHLCY/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/N6QHxm9K/Screenshot-2026-06-15-133931.png" alt="Generative Engine Optimization" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Generative Engine Optimization</div></div></div>
+            <div class="video-card" data-video="https://drive.google.com/file/d/1UxwpkqzyUn2eziywlSFMNL6cWFgJk73z/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/8grtV7Qh/Screenshot-2026-06-15-140245.png" alt="Gridpunk Mobile Gaming" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Gridpunk - Mobile Gaming</div></div></div>
+        </div>
+
+        <!-- ─── FOOTER ─── -->
+        <footer>
+            <div class="footer-cta">
+                <p>🚀 Let's build a high‑performance content engine or deploy a next‑gen AI pipeline for your brand. <strong>Typical response time is under 24 hours.</strong></p>
+                <div class="footer-buttons">
+                    <a href="https://calendly.com/kavishkasugandika81/30min" target="_blank" class="footer-btn">📼 BOOK A DISCOVERY CALL</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:kavishkasugandika81@gmail.com" class="footer-social-icon" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/kavishka-s-silva-84500a244/" target="_blank" class="footer-social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.98 0H13v2.18C13.73 8.8 15.2 8 17 8c4.42 0 5 2.91 5 6.7V24h-5v-8.4c0-2-.04-4.57-2.79-4.57-2.79 0-3.22 2.18-3.22 4.43V24H8V8z"/></svg></a>
+                    <a href="https://wa.me/393513709218" target="_blank" class="footer-social-icon" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.83L0 24l6.35-1.66A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.85 0-3.58-.5-5.07-1.37l-.36-.22-3.77.99 1-3.67-.24-.38A9.97 9.97 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg></a>
+                </div>
+                <p style="font-size:0.8rem; margin-top:0.5rem;">Or reach out directly via <a href="mailto:kavishkasugandika81@gmail.com" style="color:#e9c46a;">Email</a> or <a href="https://www.linkedin.com/in/kavishka-s-silva-84500a244/" target="_blank" style="color:#e9c46a;">LinkedIn</a></p>
+            </div>
+            <div class="footer-copyright">
+                <div>© editorial showcase — IP belongs to clients</div>
+            </div>
+        </footer>
+
+    </div><!-- end pixel-container -->
+
+    <!-- ─── MODAL ─── -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content" id="modalInner">
+            <button class="close-modal" id="closeModalBtn">✕ CLOSE</button>
+            <iframe id="modalIframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
     </div>
-  </div>
 
-  <!-- SHORT-FORM -->
-  <div class="section-head reveal"><div class="section-tag">📱 SHORT-FORM</div><h2>Reels & YouTube Shorts</h2></div>
-  <div class="card-grid reveal" style="margin-bottom: 2rem;">
-    <div class="video-card" data-video="https://drive.google.com/file/d/1ZtHvD8v1vrJp_Qvt68qL0XJ1Zt6gyvKa/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/k61P7jVc/assetsreels-schoeff-jpg.png" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Dr. Jonathan Schoeff</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1vdVsCMJvPZPWYFp8Q-jM1TVGAdMhfOna/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/gLTjBwH2/Screenshot-2025-10-15-232606.png" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Apple China Investment</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1h77WGmgQ-NwbPl1384ojsqW_fuzfQnC0/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/7dDpsNHW/assetsreels-business-shorts-jpg.png" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Business Basics Repurposed</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1Ppq-NWzK76RatHZyUGEdFy6rPOqnHLCY/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/N6QHxm9K/Screenshot-2026-06-15-133931.png" alt="Generative Engine Optimization" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Generative Engine Optimization</div></div></div>
-    <div class="video-card" data-video="https://drive.google.com/file/d/1UxwpkqzyUn2eziywlSFMNL6cWFgJk73z/preview" data-wide="false"><div class="thumb"><img src="https://i.ibb.co/8grtV7Qh/Screenshot-2026-06-15-140245.png" alt="Gridpunk Mobile Gaming" loading="lazy"><div class="play-pixel"><div class="pixel-play-btn"><span>▶</span></div></div></div><div class="card-info"><div class="card-title">Gridpunk - Mobile Gaming</div></div></div>
-  </div>
+    <!-- ─── SCRIPTS ─── -->
+    <script>
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        reveals.forEach(r => obs.observe(r));
 
-  <!-- FOOTER with CTA -->
-  <footer>
-    <div class="footer-cta">
-      <p>🚀 Let’s build a high‑performance content engine or deploy a next‑gen AI pipeline for your brand. <strong>Typical response time is under 24 hours.</strong></p>
-      <div class="footer-buttons">
-        <a href="https://calendly.com/kavishkasugandika81/30min" target="_blank" class="footer-btn">📼 BOOK A DISCOVERY CALL</a>
-      </div>
-      <div class="footer-social">
-        <a href="mailto:kavishkasugandika81@gmail.com" class="footer-social-icon" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
-        <a href="https://www.linkedin.com/in/kavishka-s-silva-84500a244/" target="_blank" class="footer-social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.98 0H13v2.18C13.73 8.8 15.2 8 17 8c4.42 0 5 2.91 5 6.7V24h-5v-8.4c0-2-.04-4.57-2.79-4.57-2.79 0-3.22 2.18-3.22 4.43V24H8V8z"/></svg></a>
-        <a href="https://wa.me/393513709218" target="_blank" class="footer-social-icon" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.67-2.09-.18-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.12.55 4.1 1.52 5.83L0 24l6.35-1.66A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 22c-1.85 0-3.58-.5-5.07-1.37l-.36-.22-3.77.99 1-3.67-.24-.38A9.97 9.97 0 012 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/></svg></a>
-      </div>
-      <p style="font-size:0.8rem; margin-top:0.5rem;">Or reach out directly via <a href="mailto:kavishkasugandika81@gmail.com" style="color:#e9c46a;">Email</a> or <a href="https://www.linkedin.com/in/kavishka-s-silva-84500a244/" target="_blank" style="color:#e9c46a;">LinkedIn</a></p>
-    </div>
-    <div class="footer-copyright">
-      <div>© editorial showcase — IP belongs to clients</div>
-    </div>
-  </footer>
-</div> <!-- end pixel-container -->
+        // Video modal
+        const modal = document.getElementById('videoModal');
+        const modalIframe = document.getElementById('modalIframe');
+        const modalInner = document.getElementById('modalInner');
 
-<div id="videoModal" class="modal"><div class="modal-content" id="modalInner"><button class="close-modal" id="closeModalBtn">✕ CLOSE</button><iframe id="modalIframe" src="" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
-
-<script>
-  const reveals = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
-  reveals.forEach(r => obs.observe(r));
-
-  const modal = document.getElementById('videoModal');
-  const modalIframe = document.getElementById('modalIframe');
-  const modalInner = document.getElementById('modalInner');
-  function openVideo(url, wide = false) {
-    let src = url;
-    if (url.includes('youtube.com/embed') && !url.includes('autoplay')) src = url + (url.includes('?') ? '&autoplay=1' : '?autoplay=1');
-    modalIframe.src = src;
-    modal.classList.add('open');
-    if (wide) modalInner.classList.add('wide');
-    else modalInner.classList.remove('wide');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeVideo() { modalIframe.src = ''; modal.classList.remove('open'); document.body.style.overflow = ''; }
-  document.querySelectorAll('.video-card, .docu-card:not(a)').forEach(el => {
-    el.addEventListener('click', (e) => { e.stopPropagation(); const url = el.getAttribute('data-video'); const wide = el.getAttribute('data-wide') === 'true'; if (url) openVideo(url, wide); });
-  });
-  document.getElementById('closeModalBtn').addEventListener('click', closeVideo);
-  modal.addEventListener('click', (e) => { if(e.target === modal) closeVideo(); });
-  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') closeVideo(); });
-
-  setTimeout(() => {
-    const targets = { xpDeliverables: 92, xpViews: 88, xpLift: 78, xpYears: 100 };
-    const bars = {
-      xpDeliverables: document.getElementById('xpDeliverables'),
-      xpViews: document.getElementById('xpViews'),
-      xpLift: document.getElementById('xpLift'),
-      xpYears: document.getElementById('xpYears')
-    };
-    for (let [id, target] of Object.entries(targets)) { if (bars[id]) { bars[id].style.transition = 'width 1.2s cubic-bezier(0.2, 0.9, 0.4, 1.1)'; bars[id].style.width = target + '%'; } }
-    setTimeout(() => {
-      const amplitudes = [5,5,6,3];
-      const centers = [92,88,78,100];
-      const barList = [bars.xpDeliverables, bars.xpViews, bars.xpLift, bars.xpYears];
-      let startTime = performance.now();
-      function pulse(now) {
-        const t = (now - startTime) / 1000;
-        const angle = t * 1.2;
-        for (let i = 0; i < barList.length; i++) {
-          const bar = barList[i];
-          if (!bar) continue;
-          let delta = Math.sin(angle) * amplitudes[i];
-          let newWidth = Math.min(100, Math.max(70, centers[i] + delta));
-          bar.style.transition = 'width 0.15s linear';
-          bar.style.width = newWidth + '%';
+        function openVideo(url, wide) {
+            let src = url;
+            if (url.includes('youtube.com/embed') && !url.includes('autoplay')) src = url + (url.includes('?') ? '&autoplay=1' :
+                '?autoplay=1');
+            modalIframe.src = src;
+            modal.classList.add('open');
+            if (wide) modalInner.classList.add('wide');
+            else modalInner.classList.remove('wide');
+            document.body.style.overflow = 'hidden';
         }
-        requestAnimationFrame(pulse);
-      }
-      requestAnimationFrame(pulse);
-    }, 1400);
-    const countUp = (id, target, suffix, duration, decimals) => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const start = performance.now();
-      const step = (now) => {
-        const elapsed = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - elapsed, 3);
-        let val = eased * target;
-        if (decimals) el.innerText = val.toFixed(1) + suffix;
-        else el.innerText = Math.floor(val).toLocaleString() + suffix;
-        if (elapsed < 1) requestAnimationFrame(step);
-        else el.innerText = (decimals ? target.toFixed(1) : target.toLocaleString()) + suffix;
-      };
-      requestAnimationFrame(step);
-    };
-    countUp('statDeliverables', 5000, '+', 2000);
-    countUp('statViews', 25, 'M+', 1800, true);
-    countUp('statLift', 40, '%+', 1600);
-    countUp('statYears', 6, '+', 1400);
-  }, 300);
-</script>
+
+        function closeVideo() {
+            modalIframe.src = '';
+            modal.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.video-card, .docu-card:not(a)').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const url = el.getAttribute('data-video');
+                const wide = el.getAttribute('data-wide') === 'true';
+                if (url) openVideo(url, wide);
+            });
+        });
+
+        document.getElementById('closeModalBtn').addEventListener('click', closeVideo);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeVideo(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeVideo(); });
+
+        // ─── FIRE BREATH CYCLE ───
+        const fireGroup = document.getElementById('fireGroup');
+        let fireTimeout = null;
+        let fireInterval = null;
+
+        function breatheFire() {
+            // Show fire
+            fireGroup.classList.add('active');
+
+            // Clear any existing timeout
+            if (fireTimeout) clearTimeout(fireTimeout);
+
+            // Hide fire after 2.5–3.5 seconds
+            const burnDuration = 2500 + Math.random() * 1000;
+            fireTimeout = setTimeout(() => {
+                fireGroup.classList.remove('active');
+                // Schedule next breath after 3–6 seconds
+                const restDuration = 3000 + Math.random() * 3000;
+                if (fireInterval) clearTimeout(fireInterval);
+                fireInterval = setTimeout(breatheFire, restDuration);
+            }, burnDuration);
+        }
+
+        // Start the fire breathing cycle after a short delay
+        setTimeout(() => {
+            breatheFire();
+        }, 1200);
+
+        // ─── ANIMATED STATS ───
+        setTimeout(() => {
+            const targets = { xpDeliverables: 92, xpViews: 88, xpLift: 78, xpYears: 100 };
+            const bars = {
+                xpDeliverables: document.getElementById('xpDeliverables'),
+                xpViews: document.getElementById('xpViews'),
+                xpLift: document.getElementById('xpLift'),
+                xpYears: document.getElementById('xpYears')
+            };
+            for (let [id, target] of Object.entries(targets)) {
+                if (bars[id]) {
+                    bars[id].style.transition = 'width 1.2s cubic-bezier(0.2, 0.9, 0.4, 1.1)';
+                    bars[id].style.width = target + '%';
+                }
+            }
+            setTimeout(() => {
+                const amplitudes = [5, 5, 6, 3];
+                const centers = [92, 88, 78, 100];
+                const barList = [bars.xpDeliverables, bars.xpViews, bars.xpLift, bars.xpYears];
+                let startTime = performance.now();
+
+                function pulse(now) {
+                    const t = (now - startTime) / 1000;
+                    const angle = t * 1.2;
+                    for (let i = 0; i < barList.length; i++) {
+                        const bar = barList[i];
+                        if (!bar) continue;
+                        let delta = Math.sin(angle) * amplitudes[i];
+                        let newWidth = Math.min(100, Math.max(70, centers[i] + delta));
+                        bar.style.transition = 'width 0.15s linear';
+                        bar.style.width = newWidth + '%';
+                    }
+                    requestAnimationFrame(pulse);
+                }
+                requestAnimationFrame(pulse);
+            }, 1400);
+
+            const countUp = (id, target, suffix, duration, decimals) => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const start = performance.now();
+                const step = (now) => {
+                    const elapsed = Math.min((now - start) / duration, 1);
+                    const eased = 1 - Math.pow(1 - elapsed, 3);
+                    let val = eased * target;
+                    if (decimals) el.innerText = val.toFixed(1) + suffix;
+                    else el.innerText = Math.floor(val).toLocaleString() + suffix;
+                    if (elapsed < 1) requestAnimationFrame(step);
+                    else el.innerText = (decimals ? target.toFixed(1) : target.toLocaleString()) + suffix;
+                };
+                requestAnimationFrame(step);
+            };
+            countUp('statDeliverables', 5000, '+', 2000);
+            countUp('statViews', 25, 'M+', 1800, true);
+            countUp('statLift', 40, '%+', 1600);
+            countUp('statYears', 6, '+', 1400);
+        }, 300);
+    </script>
+
 </body>
 </html>
